@@ -83,7 +83,7 @@ const Services: React.FC = () => {
             textClassName="text-[#787878] text-sm"
             className="bg-[#f2f2f2]"
           />
-          <h2 className="text-5xl font-semibold mt-4">What we do</h2>
+          <h2 className="text-5xl font-medium mt-4">What we do</h2>
           <p className="mt-4">
             Our lean team specializes in Web design and <br />
             development services.

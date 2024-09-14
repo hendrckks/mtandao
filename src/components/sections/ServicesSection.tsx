@@ -14,6 +14,7 @@ import { MacCommand } from '../icons/Services1';
 import { X } from '../icons/Twitter';
 import { Users } from '../icons/Users';
 import { Link } from 'react-router-dom';
+import { ChefHatMinimalisticOutline } from '../icons/Chef';
 
 const topServices = [
   { text: 'Webflow experts', icon: Rocket },
@@ -54,8 +55,14 @@ const ServicesSection: React.FC = () => {
       <Container className="flex-col items-center w-full md:w-[30vw] relative">
         <div className="absolute top-0 left-0 h-full md:w-20 w-10 bg-gradient-to-r from-white to-transparent z-10"></div>
         <div className="absolute top-0 right-0 h-full md:w-20 w-10 bg-gradient-to-l from-white to-transparent z-10"></div>
-        <FlexibleBadge icon={Wrench} text="Our services" />
-        <h2 className="text-4xl font-semibold mt-8 mb-2">Well, we do a lot.</h2>
+        <FlexibleBadge
+          icon={ChefHatMinimalisticOutline}
+          iconClassName="text-lg"
+          text="Our services"
+        />
+        <h2 className="md:text-5xl text-4xl font-semibold mt-8 mb-2">
+          Well, we cook a lot.
+        </h2>
         <p className="text-base text-center md:w-full w-3/4 mt-4">
           Web design? web development? or a single landing page?
           <br />

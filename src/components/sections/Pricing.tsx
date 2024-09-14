@@ -16,7 +16,7 @@ const pricingPlans = [
     features: [
       { text: 'Unlimited Stock Photos', included: true },
       { text: 'Average 96 hour delivery', included: true },
-      { text: 'Updates Every 2 days.', included: true },
+      // { text: 'Updates Every 2 days.', included: true },
       { text: 'Unlimited Iterations.', included: true },
       { text: 'Slack Communication.', included: true },
       { text: 'Pause or cancel anytime.', included: true },
@@ -91,7 +91,7 @@ export default function Pricing() {
           </div>
           <div className="text-black mb-8">
             <p className="text-4xl font-semibold">Transactions made simple.</p>
-            <p className="text-black text-3xl mt-8">
+            <p className="text-black text-3xl mt-6">
               No contracts. No headaches.
               <br />{' '}
               <span className="text-[#b4b3b1]">On demand, full-service</span>
@@ -102,11 +102,11 @@ export default function Pricing() {
             </p>
           </div>
           <div className="text-black text-base font-normal mb-12">
-            <p className="py-6">
-              We developed different pricing options for you and your business
-              needs.
-              <br /> Is your business just starting? Do you need help growing
-              it?
+            <p className="py-4">
+              We developed different monthly pricing options for you and your
+              business needs. Feel free to cancel or pause the subscription.
+              {/* <br /> Is your business just starting? Do you need help growing
+              it? */}
             </p>
             {/* <p>Just book a call with us and we will craft your solution</p> */}
           </div>

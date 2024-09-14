@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 p-4">
       <Container>
         <div className="flex mt-6 justify-between items-center bg-[#f2f2f2] rounded-full w-full mx-auto p-[6px]">
-          <div className="text-xl p-4 text-black">Threefold</div>
+          <div className="text-xl p-4 text-black">Devcook</div>
           <div className="flex bg-black rounded-full p-[6px] items-center">
             <TooltipLink to="/" icon={Home2} tooltip="Home" />
             <TooltipLink to="/services" icon={MacCommand} tooltip="Services" />

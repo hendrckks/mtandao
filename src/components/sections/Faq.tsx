@@ -15,8 +15,9 @@ const Faq: React.FC = () => {
             text="FAQs"
             icon={Comments}
           />
-          <h2 className="text-4xl mt-6 font-semibold text-black">
-            All the A's for your Q's
+          <h2 className="md:text-5xl text-4xl mt-6 font-medium text-black">
+            Got any questions?
+            <br /> <span className="text-[#b4b3b1]">We've got answers.</span>
           </h2>
         </div>
         <FAQList faqs={faqData} />

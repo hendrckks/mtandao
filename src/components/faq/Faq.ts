@@ -5,14 +5,14 @@ export interface FAQ {
 
 export const faqData: FAQ[] = [
   {
-    question: 'Why not hiring a full time person?',
+    question: 'What’s Devcook’s delivery process?',
     answer:
-      'Hiring a full-time senior-level designer now exceeds $100,000 plus benefits. We make it easy for you to work with design teams instead of managing them yourself, plus, you can pause your subscription until you need design work delivered again.',
+      'Devcook’s process is simple and collaborative. It begins with a kickoff call to understand your goals and inspiration. Then, you provide feedback while we handle the rest.             We update you every two days through written messages or Loom videos, depending on the topic, and are always available for a chat.',
   },
   {
-    question: 'Is there a limit on the requests?',
+    question: 'Why wouldn’t I just hire a full-time designer?',
     answer:
-      'There is no limit on the number of design requests you can submit.',
+      'They’re way more expensive and harder to manage. A senior-level designer like the ones at Devcook will easily cost you upwards of $100k, require benefits, vacation days, etc. It all adds up!',
   },
   {
     question: 'How does pausing work?',
@@ -25,8 +25,13 @@ export const faqData: FAQ[] = [
       'We use industry-standard design tools such as Adobe Creative Suite and Figma.',
   },
   {
-    question: "What if I'm not happy with the designs?",
+    question: 'What if I’m not happy with my designs?',
     answer:
-      "We offer unlimited revisions to ensure you're satisfied with the final product. If you're still not happy, we'll work with you to find a solution.",
+      "How dare you! Just kidding. You can send it back to the kitchen and we'll keep revising until it's exactly what you're looking for.",
+  },
+  {
+    question: 'Can we have calls?',
+    answer:
+      'Absolutely! You can book an intro call to discuss potential projects anytime. Each project starts with a kickoff call.We offer strategy calls as needed, but prefer to let designers focus on their work. Depending on the topic, you might meet only with the project lead.',
   },
 ];

@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
     <div className="bg-black w-full py-12 h-[50vh]">
       <Container className="text-white flex-col">
         <div>
-          <h2 className="text-xl">Threefold</h2>
+          <h2 className="text-xl">Devcook</h2>
         </div>
         <div className="py-14">
           <Container>
@@ -60,6 +60,7 @@ const Footer: React.FC = () => {
             onClick={handleSectionClick('testimonials')}
           />
         </div>
+        <p className="text-sm text-[#b4b3b1]">Built by @Tetenga.</p>
       </Container>
     </div>
   );
