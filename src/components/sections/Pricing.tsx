@@ -91,7 +91,7 @@ export default function Pricing() {
           </div>
           <div className="text-black mb-8">
             <p className="text-4xl font-semibold">Transactions made simple.</p>
-            <p className="text-black text-3xl mt-5">
+            <p className="text-black text-3xl mt-8">
               No contracts. No headaches.
               <br />{' '}
               <span className="text-[#b4b3b1]">On demand, full-service</span>
