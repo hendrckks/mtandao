@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="flex flex-col md:flex-row w-full">
           <div className="py-24 w-full text-black md:w-1/2">
             <div>
-              <h2 className="text-3xl md:text-5xl font-semibold">
+              <h2 className="text-4xl md:text-5xl font-semibold">
                 Design & No-Code delivered <br className="hidden md:inline" />{' '}
                 fast and flawlessly
               </h2>
@@ -21,9 +21,9 @@ export default function Hero() {
                 away!
               </p>
             </div>
-            <div className="mt-6 md:mt-10">
+            <div className="mt-8 md:mt-10">
               <Link to="/contact-us">
-                <CtaButton className="px-2 py-[7px] flex group items-center gap-4 w-full md:w-1/3 w-2/3 relative">
+                <CtaButton className="px-2 py-[7px] flex group items-center gap-4 md:w-1/3 w-2/3 relative">
                   <div className="bg-[#b8ff45] z-50 relative w-1/2 py-2 flex items-center justify-center group-hover:w-full ease-out transition-all duration-300 px-2 rounded-full">
                     <ArrowRoundRight className="text-black group-hover:text-transparent font-bold text-[22px]" />
                     <Phone className="text-black hidden group-hover:block mr-6 font-extrabold text-[22px]" />
