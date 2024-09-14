@@ -18,7 +18,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   return (
     <div
       className={`bg-[#f2f2f2] p-6 ${
-        isSmall ? 'rounded-md h-72' : 'rounded-lg h-80'
+        isSmall ? 'rounded-md h-72' : 'rounded-lg md:h-80'
       } shadow-lg flex flex-col justify-between mb-5 border border-[#d8d9ec]`}
     >
       <div className="overflow-hidden">
@@ -31,7 +31,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           className={`text-gray-800 italic ${
             isSmall
               ? 'text-base font-medium font-neue-regrade p-4 h-auto'
-              : 'text-lg font-neue-regrade p-6'
+              : 'md:text-lg text-base font-neue-regrade p-6'
           }`}
         >
           "{quote}"

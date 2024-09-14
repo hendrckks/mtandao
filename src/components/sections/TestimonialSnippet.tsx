@@ -25,8 +25,8 @@ const TestimonialSnippet: React.FC<TestimonialSnippetProps> = ({
   };
 
   return (
-    <div className="flex bg-[#0d0d0d] py-14 text-white min-w-[1260px]">
-      <Container className="flex justify-between w-full">
+    <div className="flex bg-[#0d0d0d] py-14 text-white w-ful md:min-w-[1260px]">
+      <Container className="md:flex flex- flex-wrap md:justify-between w-full">
         <div className="flex-col items-center">
           <img
             src="/testimonials/testimonial1.webp"
