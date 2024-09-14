@@ -6,16 +6,17 @@ import { ArrowrRight } from '../../components/icons/ArrowRight';
 
 const servicesData = [
   {
-    title: 'Website Design',
+    title: 'Website Development',
     description:
       'We design high-converting websites that help you stand out in the global market and increase revenue.',
     features: [
-      'High-converting website',
-      'Multi page',
-      'Made in Figma',
-      'Website copy included',
-      'Responsive design',
-      'SEO optimization',
+      'Custom web applications',
+      "Built by React and it's frameworks",
+      'Frontend development',
+      'Backend development',
+      'API integration',
+      'Performance optimization',
+      'Ongoing support',
     ],
     images: [
       '/web design/60.avif',
@@ -31,12 +32,13 @@ const servicesData = [
     description:
       ' We Leverage lastest technologies to create landing pages that captivate and most importantly, convert.',
     features: [
-      'Custom web applications',
-      'Frontend development',
-      'Backend development',
-      'API integration',
-      'Performance optimization',
-      'Ongoing support',
+      'High-converting website',
+      'Multi page',
+      "Built by React and it's frameworks",
+      'Website copy included',
+      'Responsive design',
+      'SEO optimization',
+      'Hosting assistance Coverage',
     ],
     images: [
       '/landing pages/qw.avif',
