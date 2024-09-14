@@ -126,17 +126,9 @@ const MobileNavbar: React.FC = () => {
                 {!isHomePage && (
                   <button
                     className="w-full py-2 bg-black text-white rounded-lg"
-                    onClick={handleSectionClick('pricing')}
-                  >
-                    See Plans
-                  </button>
-                )}
-                {!isHomePage && (
-                  <button
-                    className="w-full py-2 bg-black text-white rounded-lg"
                     onClick={handleSectionClick('testimonials')}
                   >
-                    See testimonials
+                    See Testimonials
                   </button>
                 )}
                 {!isHomePage && (
@@ -144,7 +136,7 @@ const MobileNavbar: React.FC = () => {
                     className="w-full py-2 bg-black text-white rounded-lg"
                     onClick={handleSectionClick('pricing')}
                   >
-                    See pricing
+                    See Plans & Pricing
                   </button>
                 )}
               </div>
