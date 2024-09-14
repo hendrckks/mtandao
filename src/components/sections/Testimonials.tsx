@@ -78,7 +78,7 @@ const Testimonials: React.FC = () => {
             text="Testimonials"
             icon={ThumbsUpOutlineRounded}
           />
-          <h2 className="md:text-5xl taxt-4xl mt-6 font-semibold text-black">
+          <h2 className="md:text-5xl text-4xl mt-6 font-semibold text-black">
             Don't Take our Word for It.
           </h2>
           <p className="md:text-4xl text-3xl mt-4">
