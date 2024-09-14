@@ -81,6 +81,7 @@ const Testimonials: React.FC = () => {
           <h2 className="text-4xl mt-6 font-medium text-black">
             Don't Take our Word for It.
           </h2>
+          <p className="text-lg mt-4">See what our clients are saying.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
