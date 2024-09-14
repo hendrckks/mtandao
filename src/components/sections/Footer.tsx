@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
             </ul>
           </Container>
         </div>
-        <div className="flex items-center space-x-4 text-[#f2f2f2] text-sm">
+        <div className="flex items-center space-x-4 text-[#f2f2f2] text-xs md:text-sm">
           <span>Privacy policy</span>
           <span>Terms of service</span>
         </div>
