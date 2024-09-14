@@ -27,9 +27,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   return (
     <div className="bg-[#f2f2f2] md:min-w-[1200px] flex-col md:flex-row flex rounded-md shadow-md p-5">
       <div className="md:w-1/2">
-        <h3 className="text-xl mb-3">{title}</h3>
+        <h3 className="text-2xl mb-3">{title}</h3>
         <p className="text-sm w-auto md:w-[438px] mb-4">{description}</p>
-        <ul className="mb-6">
+        <ul className="mt-10 mb-6">
           {features.map((feature, index) => (
             <li key={index} className="flex gap-3 mt-5 text-sm items-center">
               <Ticktick />

@@ -26,7 +26,7 @@ const AdditionalOption: React.FC<AdditionalOptionProps> = ({
   }`;
   const descriptionClasses = `${
     isBlackBackground ? 'text-gray-300' : 'text-gray-600'
-  } mb-4 text-sm font-medium`;
+  } mb-4 text-sm font-normal mt-6`;
   const buttonClasses = `mt-auto w-fit py-2 px-4 font-medium rounded-full text-sm transition-colors ${
     isBlackBackground
       ? 'bg-white text-black hover:bg-gray-200'

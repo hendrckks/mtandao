@@ -10,24 +10,24 @@ import FlexibleBadge from '../TitleBadge';
 const pricingPlans = [
   {
     title: 'Kickstarter',
-    price: 4000,
-    description: 'Perfect for smaller businesses.',
+    price: 1995,
+    description: 'One request at a time. Pause or cancel anytime.',
     icon: <GraphArrowIncreaseSolid className="text-black" />,
     features: [
-      { text: '1 Request at a time.', included: true },
-      { text: 'Updates every 2 days.', included: true },
-      { text: 'Unlimited iterations.', included: true },
-      { text: 'Slack communication.', included: true },
-      { text: 'Full stack design (no development)', included: true },
+      { text: 'Unlimited Stock Photos', included: true },
+      { text: 'Updates Every 2 days.', included: true },
+      { text: 'Unlimited Iterations.', included: true },
+      { text: 'Slack Communication.', included: true },
+      { text: 'Full Stack Sesign (no development)', included: true },
     ],
   },
   {
     title: 'Pro',
-    price: 6000,
-    description: 'Great for growing businesses.',
+    price: 3995,
+    description: 'Double requests at a time. Pause or cancel anytime.',
     icon: <Rocket className="text-black" />,
     features: [
-      { text: '2 Requests at a time.', included: true },
+      { text: 'Unlimited Stock Photos.', included: true },
       { text: 'Updates every day.', included: true },
       { text: 'Unlimited iterations.', included: true },
       { text: 'Slack communication.', included: true },
@@ -86,9 +86,9 @@ export default function Pricing() {
           <div className="bg-black flex w-fit text-sm mb-6 items-center justify-center gap-2 rounded-full px-4 py-2">
             <FlexibleBadge text="Pricing" />
           </div>
-          <div className="text-black mb-12">
+          <div className="text-black mb-8">
             <p className="text-4xl font-semibold">Transactions made simple.</p>
-            <p className="text-black text-xl mt-3">
+            <p className="text-black text-xl mt-5">
               No contracts, no wasted time, start immediately
             </p>
           </div>

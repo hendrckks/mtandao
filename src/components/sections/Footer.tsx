@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
     <div className="bg-black w-full py-12 h-[50vh]">
       <Container className="text-white flex-col">
         <div>
-          <h2 className="text-xl">Mtandao</h2>
+          <h2 className="text-xl">Tenfold</h2>
         </div>
         <div className="py-14">
           <Container>

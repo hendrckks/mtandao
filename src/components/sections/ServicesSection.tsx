@@ -55,7 +55,7 @@ const ServicesSection: React.FC = () => {
         <div className="absolute top-0 left-0 h-full md:w-20 w-10 bg-gradient-to-r from-white to-transparent z-10"></div>
         <div className="absolute top-0 right-0 h-full md:w-20 w-10 bg-gradient-to-l from-white to-transparent z-10"></div>
         <FlexibleBadge icon={Wrench} text="Our services" />
-        <h2 className="text-4xl font-medium mt-4 mb-2">Well, we do a lot.</h2>
+        <h2 className="text-4xl font-medium mt-8 mb-2">Well, we do a lot.</h2>
         <p className="text-base text-center md:w-full w-3/4 mt-4">
           Web design? web development? or a single landing page?
           <br />

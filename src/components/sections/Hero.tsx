@@ -7,18 +7,17 @@ import { Phone } from '../icons/Contact';
 export default function Hero() {
   return (
     <div className="bg-white w-full">
-      <Container className="mb-10 md:h-[678px] h-fit px-4 w-full">
-        <div className="flex flex-col md:flex-row w-full">
+      <Container className="mb-10 md:h-[678px] md:min-w-[1300px] h-fit px-4 w-full">
+        <div className="flex flex-col md:mt-10 mt-0 md:flex-row w-full">
           <div className="py-24 w-full text-black md:w-1/2">
             <div>
-              <h2 className="text-5xl md:text-5xl font-semibold">
-                Design & No-Code delivered <br className="hidden md:inline" />{' '}
-                fast and flawlessly
+              <h2 className="text-5xl md:text-7xl md:mt-10 mt-0 font-semibold">
+                A Web Development <br className="hidden md:inline" /> Agency
+                With a Twist
               </h2>
-              <p className="mt-4 md:mt-[16px] text-base md:text-[18px]">
-                Where creativity meets speed.{' '}
-                <br className="hidden md:inline" /> Your ideas are just a click
-                away!
+              <p className="mt-4 md:mt-[16px] font-normal text-base md:text-[18px]">
+                Design subscriptions for everyone.
+                <br className="hidden md:inline" /> Pause or cancel anytime.
               </p>
             </div>
             <div className="mt-8 md:mt-10">
@@ -28,7 +27,7 @@ export default function Hero() {
                     <ArrowRoundRight className="text-black group-hover:text-transparent font-bold text-[22px]" />
                     <Phone className="text-black hidden group-hover:block mr-6 font-extrabold text-[22px]" />
                   </div>
-                  <span className="text-white absolute left-[calc(50%+1rem)] group-hover:opacity-0 transition-opacity duration-300 font-semibold">
+                  <span className="text-white absolute left-[calc(48%+1rem)] group-hover:opacity-0 transition-opacity duration-300 font-medium">
                     Book a call
                   </span>
                 </CtaButton>

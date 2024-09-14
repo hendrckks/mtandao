@@ -7,7 +7,7 @@ export default {
         'custom-inset': 'inset 0px 2px 1px 0px rgb(255, 255, 255)',
       },
       fontFamily: {
-        'neue-regrade': ['Neue Regrade', 'sans-serif'],
+        brockmann: ['Brockmann', 'sans-serif'], // Add your custom font here
       },
       fontWeight: {
         light: 300,

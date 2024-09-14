@@ -1,6 +1,7 @@
 import React from 'react';
 import { Ticktick } from '../icons/Tick';
 import { X } from '../icons/X';
+import { Link } from 'react-router-dom';
 
 interface Feature {
   text: string;
@@ -22,19 +23,28 @@ const PricingCard: React.FC<PricingCardProps> = ({
   features,
   icon,
 }) => {
+  // Format the price with a comma at the thousand figure
+  const formattedPrice = price.toLocaleString('en-US');
+
   return (
     <div className="bg-white text-black rounded-3xl shadow-lg p-8 flex flex-col h-full">
-      <div className="items-center mb-4 ">
+      <div className="items-center flex mb-4">
         <div className="bg-[#b8ff45] h-12 w-12 flex items-center justify-center rounded-full mr-3">
           {icon}
         </div>
-        <h3 className="text-xl mt-4 font-semibold text-black">{title}</h3>
+        <h3 className="text-xl font-medium text-black">{title}</h3>
       </div>
-      <p className="text-base font-medium mb-2">Starts at ${price}</p>
-      <p className="text-sm py-8">{description}</p>
-      <ul className="flex-grow mb-4">
+      <p className="text-[42px] font-medium mt-4 flex items-center mb-2">
+        $<span>{formattedPrice}</span>/
+        <span className="text-2xl font-semibold">m</span>
+      </p>
+      <p className="text-sm py-6">{description}</p>
+      <ul className="flex-grow mb-2">
         {features.map((feature, index) => (
-          <li key={index} className="flex text-base items-center py-2">
+          <li
+            key={index}
+            className="flex md:text-base text-sm items-center py-2"
+          >
             <span className="mr-4">
               {feature.included ? (
                 <Ticktick className="text-black w-4 h-4" />
@@ -48,9 +58,17 @@ const PricingCard: React.FC<PricingCardProps> = ({
           </li>
         ))}
       </ul>
-      <button className="mt-4 bg-black text-white text-sm py-2 px-4 rounded-full transition-colors">
-        0 / 0 spots available
-      </button>
+      <div className="flex-col text-center">
+        <button className="mt-4 bg-black text-white text-sm py-2 px-4 rounded-lg transition-colors">
+          0 / 0 spots available
+        </button>
+        <div className="mt-2 text-sm">or</div>
+        <div className="flex-col ">
+          <Link to="/contact-us" className="underline text-sm">
+            Book a call
+          </Link>
+        </div>
+      </div>
       <p className="text-center text-sm text-[#7329e3] mt-2">
         Powered by stripe
       </p>
