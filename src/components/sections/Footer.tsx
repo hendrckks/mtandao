@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
         </div>
         <div className="py-14">
           <Container>
-            <ul className="md:space-x-10 space-x-4 flex items-center text-base">
+            <ul className="md:space-x-10 space-x-4 flex  items-center text-sm md:text-base">
               <button onClick={handleSectionClick('about')}>
                 <li>About</li>
               </button>
