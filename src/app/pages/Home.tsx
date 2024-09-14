@@ -21,8 +21,8 @@ const Home: React.FC = () => {
   }, [updatePricingRef]);
 
   return (
-    <div className="min-h-[200vh] w-full bg-white">
-      <main className="pt-24">
+    <div className="min-h-screen w-full bg-white overflow-x-hidden">
+      <main className="pt-16 md:pt-24">
         <Hero />
         <TestimonialSnippet testimonialsRef={testimonialsRef} />
         <ServicesSection />
