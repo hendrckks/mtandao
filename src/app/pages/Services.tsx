@@ -27,9 +27,9 @@ const servicesData = [
     ],
   },
   {
-    title: 'Web Development',
+    title: 'Landing Pages',
     description:
-      'We build robust and scalable web applications using the latest technologies and best practices.',
+      ' We Leverage lastest technologies to create landing pages that captivate and most importantly, convert.',
     features: [
       'Custom web applications',
       'Frontend development',
@@ -39,12 +39,12 @@ const servicesData = [
       'Ongoing support',
     ],
     images: [
-      '/web design/60.avif',
-      '/web design/61.avif',
-      '/web design/62.avif',
-      '/web design/63.avif',
-      '/web design/64.avif',
-      '/web design/65.avif',
+      '/landing pages/qw.avif',
+      '/landing pages/we.avif',
+      '/landing pages/er.avif',
+      '/landing pages/rt.avif',
+      '/landing pages/ty.avif',
+      '/landing pages/yu.avif',
     ],
   },
   {
