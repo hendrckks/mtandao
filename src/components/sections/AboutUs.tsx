@@ -56,7 +56,9 @@ const AboutUs: React.FC = () => {
         <div className="flex flex-col md:flex-row w-full mb-12">
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
             <FlexibleBadge icon={Users} text="About us" />
-            <h3 className="py-4 text-4xl">Meet the Mtandao Team</h3>
+            <h3 className="py-4 font-semibold text-4xl">
+              Meet the Mtandao Team
+            </h3>
             <p className="text-lg font-normal">Your Development Partners</p>
           </div>
           <div className="w-full font-light md:w-1/2">
