@@ -1,4 +1,3 @@
-// src/components/ServiceCard.tsx
 import React, { useContext } from 'react';
 import FlexibleBadge from './TitleBadge';
 import { Ticktick } from './icons/Tick';
@@ -24,9 +23,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     (section: 'pricing' | 'testimonials' | 'about' | 'faq') => () => {
       scrollToSection(section);
     };
+
   return (
-    <div className="bg-[#f2f2f2] md:min-w-[1200px] flex-row md:flex rounded-md shadow-md p-5">
-      <div>
+    <div className="bg-[#f2f2f2] md:min-w-[1200px] flex-col md:flex-row flex rounded-md shadow-md p-5">
+      <div className="md:w-1/2">
         <h3 className="text-xl mb-3">{title}</h3>
         <p className="text-sm w-auto md:w-[438px] mb-4">{description}</p>
         <ul className="mb-6">
@@ -56,12 +56,21 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           />
         </div>
       </div>
-      <div className="grid md:grid-cols-3 grid-cols-1 mt-5 gap-3 h-full w-full">
-        {images.slice(0, 6).map((image, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-3 mt-5 md:mt-0 md:w-1/2">
+        {images.slice(0, 3).map((image, index) => (
           <div key={index} className="w-full">
             <img
               src={image}
-              alt="service image"
+              alt={`service image ${index + 1}`}
+              className="rounded-lg w-full h-48 object-cover"
+            />
+          </div>
+        ))}
+        {images.slice(3, 6).map((image, index) => (
+          <div key={index + 3} className="w-full hidden md:block">
+            <img
+              src={image}
+              alt={`service image ${index + 4}`}
               className="rounded-lg w-full h-48 object-cover"
             />
           </div>
