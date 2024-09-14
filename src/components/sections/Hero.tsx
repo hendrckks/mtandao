@@ -16,7 +16,7 @@ export default function Hero() {
                 With a Twist
               </h2>
               <p className="py-6 md:mt-[16px] font-normal md:text-xl text-base">
-                Tenfold replaces unreliable freelancers and expensive agencies
+                Devcook replaces unreliable freelancers and expensive agencies
                 <br />
                 for one flat monthly fee, with designs delivered so fast that it
                 will blow your mind.
