@@ -1,0 +1,116 @@
+import React from 'react';
+import Container from '../../components/Container';
+import FlexibleBadge from '../../components/TitleBadge';
+import ServiceCard from '../../components/ServicesCard';
+import { ArrowrRight } from '../../components/icons/ArrowRight';
+import { Link } from 'react-router-dom';
+
+const servicesData = [
+  {
+    title: 'Website Design',
+    description:
+      'We design high-converting websites that help you stand out in the global market and increase revenue.',
+    features: [
+      'High-converting website',
+      'Multi page',
+      'Made in Figma',
+      'Website copy included',
+      'Responsive design',
+      'SEO optimization',
+    ],
+    images: [
+      '/web design/60.avif',
+      '/web design/61.avif',
+      '/web design/62.avif',
+      '/web design/63.avif',
+      '/web design/64.avif',
+      '/web design/65.avif',
+    ],
+  },
+  {
+    title: 'Web Development',
+    description:
+      'We build robust and scalable web applications using the latest technologies and best practices.',
+    features: [
+      'Custom web applications',
+      'Frontend development',
+      'Backend development',
+      'API integration',
+      'Performance optimization',
+      'Ongoing support',
+    ],
+    images: [
+      '/web design/60.avif',
+      '/web design/61.avif',
+      '/web design/62.avif',
+      '/web design/63.avif',
+      '/web design/64.avif',
+      '/web design/65.avif',
+    ],
+  },
+  {
+    title: 'E-commerce Solutions',
+    description:
+      'We create powerful e-commerce platforms to help you sell products and services online effectively.',
+    features: [
+      'Custom e-commerce websites',
+      'Shopping cart integration',
+      'Payment gateway setup',
+      'Inventory management',
+      'Order tracking',
+      'Analytics and reporting',
+    ],
+    images: [
+      '/web design/60.avif',
+      '/web design/61.avif',
+      '/web design/62.avif',
+      '/web design/63.avif',
+      '/web design/64.avif',
+      '/web design/65.avif',
+    ],
+  },
+];
+
+const Services: React.FC = () => {
+  return (
+    <div className="min-h-[100vh] w-full bg-white">
+      <Container className="flex-col items-start md:py-48 py-40 mx-4 text-black">
+        <div className="mb-5">
+          <FlexibleBadge
+            text="Our Services"
+            iconClassName="hidden"
+            textClassName="text-[#787878] text-sm"
+            className="bg-[#f2f2f2]"
+          />
+          <h2 className="text-5xl font-semibold mt-4">What we do</h2>
+          <p className="mt-4">
+            Our lean team specializes in Web design and <br />
+            development services.
+          </p>
+          <Link to="/portfolio" className="flex items-center cursor-pointer">
+            <FlexibleBadge
+              text="View Projects"
+              iconClassName="text-base text-black"
+              icon={ArrowrRight}
+              className="bg-[#f3f3f3] rounded-md transition-colors duration-75 p-3 mt-14"
+              textClassName="text-[#0d0d0d]"
+            />
+          </Link>
+        </div>
+        <div className="flex-col md:mt-0 mt-4 space-y-5">
+          {servicesData.map((service, index) => (
+            <ServiceCard
+              key={index}
+              title={service.title}
+              description={service.description}
+              features={service.features}
+              images={service.images}
+            />
+          ))}
+        </div>
+      </Container>
+    </div>
+  );
+};
+
+export default Services;
