@@ -91,15 +91,18 @@ export default function Pricing() {
           </div>
           <div className="text-black mb-8">
             <p className="text-4xl font-semibold">Transactions made simple.</p>
-            <p className="text-black text-xl mt-5">
-              No contracts, no wasted time, start immediately
+            <p className="text-black text-3xl mt-5">
+              No contracts. No headaches.
+              <br />{' '}
+              <span className="text-[#b4b3b1]">On demand, full-service</span>
+              <br />
+              <span className="text-[#b4b3b1]">
+                creative without the bullshit.
+              </span>
             </p>
           </div>
           <div className="text-black text-base font-normal mb-12">
-            <p>
-              We get it. <br /> Time is money and it's affordable to be wasted.
-            </p>
-            <p className="py-8">
+            <p className="py-6">
               We developed different pricing options for you and your business
               needs.
               <br /> Is your business just starting? Do you need help growing

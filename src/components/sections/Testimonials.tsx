@@ -81,7 +81,10 @@ const Testimonials: React.FC = () => {
           <h2 className="text-4xl mt-6 font-semibold text-black">
             Don't Take our Word for It.
           </h2>
-          <p className="text-lg mt-4">See what our clients are saying.</p>
+          <p className="text-3xl mt-4">
+            Reputation is everything.
+            <br /> <span className="text-[#b4b3b1]">Ours is flawless.</span>
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
