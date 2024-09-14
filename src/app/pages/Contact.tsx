@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="min-h-[100vh] w-full bg-white">
       <Container className="flex-col md:py-48 py-40 text-black md:items-start items-center">
-        <div className="mb-5">
+        <div className="mb-5 md:px-0 px-4">
           <FlexibleBadge
             text="Contact us"
             iconClassName="hidden"
