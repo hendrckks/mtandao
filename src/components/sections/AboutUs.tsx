@@ -26,27 +26,27 @@ const teamMembers = [
     bio: 'Adam takes care of everything related to Framer. He designs and develops full functional websites in multiple niches.',
     link: 'https://x.com/home',
   },
-  {
-    image: '/testimonials/testimonial3.webp',
-    name: 'Sarah Mendes',
-    role: 'Branding',
-    bio: 'Sarah takes care of the logo identity and branding part. She has a keen eye for business strategy and visual success.',
-    link: 'https://x.com/home',
-  },
-  {
-    image: '/testimonials/testimonial4.webp',
-    name: 'Mark Berg',
-    role: 'Founder, CEO',
-    bio: 'The man behind the team, Mark founded Sixfold when he was a freelancer and now manages a team of design experts.',
-    link: 'https://x.com/home',
-  },
-  {
-    image: '/testimonials/testimonial5.webp',
-    name: 'Mia Ellswort',
-    role: 'Motion Designer',
-    bio: 'Mia makes the pixels move! Her elegant style and motion design expertise gives an amazing final vibe to the projects.',
-    link: 'https://x.com/home',
-  },
+  // {
+  //   image: '/testimonials/testimonial3.webp',
+  //   name: 'Sarah Mendes',
+  //   role: 'Branding',
+  //   bio: 'Sarah takes care of the logo identity and branding part. She has a keen eye for business strategy and visual success.',
+  //   link: 'https://x.com/home',
+  // },
+  // {
+  //   image: '/testimonials/testimonial4.webp',
+  //   name: 'Mark Berg',
+  //   role: 'Founder, CEO',
+  //   bio: 'The man behind the team, Mark founded Sixfold when he was a freelancer and now manages a team of design experts.',
+  //   link: 'https://x.com/home',
+  // },
+  // {
+  //   image: '/testimonials/testimonial5.webp',
+  //   name: 'Mia Ellswort',
+  //   role: 'Motion Designer',
+  //   bio: 'Mia makes the pixels move! Her elegant style and motion design expertise gives an amazing final vibe to the projects.',
+  //   link: 'https://x.com/home',
+  // },
 ];
 
 const AboutUs: React.FC = () => {

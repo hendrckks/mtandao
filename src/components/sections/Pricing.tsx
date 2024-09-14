@@ -108,7 +108,7 @@ export default function Pricing() {
               <br /> Is your business just starting? Do you need help growing
               it?
             </p>
-            <p>Just book a call with us and we will craft your solution</p>
+            {/* <p>Just book a call with us and we will craft your solution</p> */}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
