@@ -3,7 +3,6 @@ import Container from '../../components/Container';
 import FlexibleBadge from '../../components/TitleBadge';
 import ServiceCard from '../../components/ServicesCard';
 import { ArrowrRight } from '../../components/icons/ArrowRight';
-import { Link } from 'react-router-dom';
 
 const servicesData = [
   {
@@ -74,7 +73,7 @@ const servicesData = [
 const Services: React.FC = () => {
   return (
     <div className="min-h-[100vh] w-full bg-white">
-      <Container className="flex-col items-start md:py-48 py-40 mx-4 text-black">
+      <Container className="flex-col items-start  md:px-0 px-4 py-48 text-black">
         <div className="mb-5">
           <FlexibleBadge
             text="Our Services"
@@ -87,7 +86,7 @@ const Services: React.FC = () => {
             Our lean team specializes in Web design and <br />
             development services.
           </p>
-          <Link to="/portfolio" className="flex items-center cursor-pointer">
+          <div className="flex items-center cursor-pointer">
             <FlexibleBadge
               text="View Projects"
               iconClassName="text-base text-black"
@@ -95,9 +94,9 @@ const Services: React.FC = () => {
               className="bg-[#f3f3f3] rounded-md transition-colors duration-75 p-3 mt-14"
               textClassName="text-[#0d0d0d]"
             />
-          </Link>
+          </div>
         </div>
-        <div className="flex-col md:mt-0 mt-4 space-y-5">
+        <div className="flex-col md:mt-10 mt:0 py-10 space-y-5">
           {servicesData.map((service, index) => (
             <ServiceCard
               key={index}

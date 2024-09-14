@@ -11,11 +11,11 @@ import { NavbarContext } from './NavbarContext';
 import MobileNavbar from './MobileNavbar';
 
 const Navbar: React.FC = () => {
-  const { scrollToPricing } = useContext(NavbarContext);
+  const { scrollToSection } = useContext(NavbarContext);
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
   const handlePricingClick = () => {
-    scrollToPricing();
+    scrollToSection('pricing');
   };
 
   if (isMobile) {

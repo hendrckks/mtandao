@@ -4,15 +4,12 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Footer from '../components/sections/Footer';
 import Navbar from '../components/navigation/Navbar';
 import { NavbarContext } from '../components/navigation/NavbarContext';
+import MobileNavbar from '../components/navigation/MobileNavbar';
 
 const PageTransition: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const location = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
 
   return (
     <AnimatePresence mode="wait">
@@ -30,71 +27,105 @@ const PageTransition: React.FC<{ children: React.ReactNode }> = ({
 };
 
 const MainLayout: React.FC = () => {
-  const [pricingRef, setPricingRef] =
-    useState<React.RefObject<HTMLDivElement> | null>(null);
+  const [sectionRefs, setSectionRefs] = useState<{
+    [key in
+      | 'pricing'
+      | 'testimonials'
+      | 'about'
+      | 'faq']: React.RefObject<HTMLDivElement> | null;
+  }>({
+    pricing: null,
+    testimonials: null,
+    about: null,
+    faq: null,
+  });
   const [shouldPerformSecondaryClick, setShouldPerformSecondaryClick] =
     useState(false);
+  const [targetSection, setTargetSection] = useState<
+    'pricing' | 'testimonials' | 'about' | 'faq' | null
+  >(null);
   const location = useLocation();
   const navigate = useNavigate();
 
-  const updatePricingRef = useCallback(
-    (ref: React.RefObject<HTMLDivElement> | null) => {
-      setPricingRef(ref);
+  const updateSectionRef = useCallback(
+    (
+      section: 'pricing' | 'testimonials' | 'about' | 'faq',
+      ref: React.RefObject<HTMLDivElement> | null
+    ) => {
+      setSectionRefs((prev) => ({ ...prev, [section]: ref }));
     },
     []
   );
 
-  const scrollToPricing = useCallback(() => {
-    if (location.pathname !== '/') {
-      navigate('/', { state: { fromPricingButton: true } });
-    } else if (pricingRef && pricingRef.current) {
-      const yOffset = -80; // Adjust this value to account for any fixed headers
-      const y =
-        pricingRef.current.getBoundingClientRect().top +
-        window.pageYOffset +
-        yOffset;
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    }
-  }, [location.pathname, navigate, pricingRef]);
+  const scrollToSection = useCallback(
+    (section: 'pricing' | 'testimonials' | 'about' | 'faq') => {
+      if (location.pathname !== '/') {
+        navigate('/', { state: { fromSection: section } });
+      } else if (sectionRefs[section] && sectionRefs[section]?.current) {
+        const yOffset = -80;
+        const y =
+          sectionRefs[section]?.current?.getBoundingClientRect().top! +
+          window.pageYOffset +
+          yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    },
+    [location.pathname, navigate, sectionRefs]
+  );
 
   useEffect(() => {
     if (
       location.pathname === '/' &&
       location.state &&
-      (location.state as any).fromPricingButton
+      (location.state as any).fromSection
     ) {
+      setTargetSection((location.state as any).fromSection);
       setShouldPerformSecondaryClick(true);
     }
   }, [location]);
 
   useEffect(() => {
-    if (shouldPerformSecondaryClick) {
-      // Simulate a click on the pricing button
+    if (shouldPerformSecondaryClick && targetSection) {
       setTimeout(() => {
-        scrollToPricing();
+        scrollToSection(targetSection);
         setShouldPerformSecondaryClick(false);
+        setTargetSection(null);
+        // Clear the location state
+        window.history.replaceState({}, document.title);
       }, 100); // Small delay to ensure the page has rendered
     }
-  }, [shouldPerformSecondaryClick, scrollToPricing]);
+  }, [shouldPerformSecondaryClick, targetSection, scrollToSection]);
+
+  useEffect(() => {
+    // Scroll to top on route change
+    window.scrollTo(0, 0);
+    // Force a re-render after a short delay
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+  }, [location.pathname]);
 
   return (
-    <NavbarContext.Provider
-      value={{
-        pricingRef,
-        updatePricingRef,
-        scrollToPricing,
-        shouldPerformSecondaryClick,
-        setShouldPerformSecondaryClick,
-      }}
-    >
-      <Navbar />
-      <main>
-        <PageTransition>
-          <Outlet />
-        </PageTransition>
-      </main>
-      <Footer />
-    </NavbarContext.Provider>
+    <div>
+      <NavbarContext.Provider
+        value={{
+          sectionRefs,
+          updateSectionRef,
+          scrollToSection,
+          shouldPerformSecondaryClick,
+          setShouldPerformSecondaryClick,
+        }}
+      >
+        <Navbar />
+        <MobileNavbar />
+        <main>
+          <PageTransition>
+            <Outlet />
+          </PageTransition>
+        </main>
+        <Footer />
+      </NavbarContext.Provider>
+    </div>
   );
 };
 

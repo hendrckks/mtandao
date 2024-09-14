@@ -2,8 +2,8 @@
 import React, { useContext } from 'react';
 import FlexibleBadge from './TitleBadge';
 import { Ticktick } from './icons/Tick';
-import { NavbarContext } from './navigation/NavbarContext';
 import { Link } from 'react-router-dom';
+import { NavbarContext } from './navigation/NavbarContext';
 
 interface ServiceCardProps {
   title: string;
@@ -18,13 +18,14 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   features,
   images,
 }) => {
-  const { scrollToPricing } = useContext(NavbarContext);
+  const { scrollToSection } = useContext(NavbarContext);
 
-  const handlePricingClick = () => {
-    scrollToPricing();
-  };
+  const handleSectionClick =
+    (section: 'pricing' | 'testimonials' | 'about' | 'faq') => () => {
+      scrollToSection(section);
+    };
   return (
-    <div className="bg-[#f2f2f2] md:min-w-[1200px] flex-col md:flex rounded-md shadow-md p-5">
+    <div className="bg-[#f2f2f2] md:min-w-[1200px] flex-row md:flex rounded-md shadow-md p-5">
       <div>
         <h3 className="text-xl mb-3">{title}</h3>
         <p className="text-sm w-auto md:w-[438px] mb-4">{description}</p>
@@ -47,7 +48,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           </Link>
 
           <FlexibleBadge
-            onClick={handlePricingClick}
+            onClick={handleSectionClick('pricing')}
             text="Work with us"
             iconClassName="hidden"
             textClassName="text-[#787878] group-hover:text-[#0d0d0d] text-sm"
@@ -55,7 +56,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           />
         </div>
       </div>
-      <div className="grid md:grid-cols-3 grid-cols-1 md:mt-0 mt-5 gap-3 h-full w-full">
+      <div className="grid md:grid-cols-3 grid-cols-1 mt-5 gap-3 h-full w-full">
         {images.slice(0, 6).map((image, index) => (
           <div key={index} className="w-full">
             <img

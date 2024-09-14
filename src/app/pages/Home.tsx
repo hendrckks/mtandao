@@ -9,28 +9,40 @@ import TestimonialSnippet from '../../components/sections/TestimonialSnippet';
 import { NavbarContext } from '../../components/navigation/NavbarContext';
 
 const Home: React.FC = () => {
-  const localPricingRef = useRef<HTMLDivElement>(null);
+  const pricingRef = useRef<HTMLDivElement>(null);
   const testimonialsRef = useRef<HTMLDivElement>(null);
-  const { updatePricingRef } = useContext(NavbarContext);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const faqRef = useRef<HTMLDivElement>(null);
+  const { updateSectionRef } = useContext(NavbarContext);
 
   useEffect(() => {
-    updatePricingRef(localPricingRef);
+    updateSectionRef('pricing', pricingRef);
+    updateSectionRef('testimonials', testimonialsRef);
+    updateSectionRef('about', aboutRef);
+    updateSectionRef('faq', faqRef);
     return () => {
-      updatePricingRef(null); // Cleanup when component unmounts
+      updateSectionRef('pricing', null);
+      updateSectionRef('testimonials', null);
+      updateSectionRef('about', null);
+      updateSectionRef('faq', null);
     };
-  }, [updatePricingRef]);
+  }, [updateSectionRef]);
 
   return (
     <div className="min-h-screen w-full bg-white overflow-x-hidden">
-      <main className="pt-16 md:pt-24">
+      <main className="pt-24">
         <Hero />
         <TestimonialSnippet testimonialsRef={testimonialsRef} />
         <ServicesSection />
-        <div ref={localPricingRef} id="pricing-section">
+        <div ref={pricingRef} id="pricing-section">
           <Pricing />
         </div>
-        <AboutUs />
-        <Faq />
+        <div ref={aboutRef}>
+          <AboutUs />
+        </div>
+        <div ref={faqRef}>
+          <Faq />
+        </div>
         <div ref={testimonialsRef}>
           <Testimonials />
         </div>
