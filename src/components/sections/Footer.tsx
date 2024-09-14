@@ -44,12 +44,14 @@ const Footer: React.FC = () => {
           <span>Terms of service</span>
         </div>
         <div className="py-14 space-x-4 flex items-center">
-          <FlexibleBadge
-            text="Work with us"
-            iconClassName="hidden"
-            textClassName="text-black"
-            className="p-3 bg-white cursor-pointer"
-          />
+          <Link to="/contact-us">
+            <FlexibleBadge
+              text="Work with us"
+              iconClassName="hidden"
+              textClassName="text-black"
+              className="p-3 bg-white cursor-pointer"
+            />
+          </Link>
           <FlexibleBadge
             text="See testimonials"
             iconClassName="hidden"
