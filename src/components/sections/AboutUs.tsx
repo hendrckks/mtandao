@@ -9,7 +9,7 @@ const teamMembers = [
     image: '/testimonials/me.jpg',
     name: 'Samuel Tetenga',
     role: 'Lead Web developer',
-    bio: 'Sam is the mastermind behind flawless, intuitive interfaces. Leo makes sure every website is accessible to all users.',
+    bio: 'Sam is the mastermind behind flawless, intuitive interfaces. He makes sure every website is accessible to all users.',
     link: 'https://x.com/atomic_ke',
   },
   {
