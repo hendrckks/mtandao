@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import Container from '../../components/Container';
+import { Calendly } from '../../components/icons/Calendly';
 import FlexibleBadge from '../../components/TitleBadge';
 
 const Contact = () => {
@@ -41,6 +43,17 @@ const Contact = () => {
             <button className="bg-black mt-5 text-white rounded-lg focus:outline-none flex h-10 items-center justify-center w-full">
               Submit
             </button>
+            <Link
+              to="https://cal.com/devcook/devcook-intro"
+              className="flex p-4 border hover:bg-black hover:text-white transition-colors duration-300 items-center text-black justify-center mt-4 bg-white border-black rounded-lg space-x-2"
+            >
+              <div>
+                <Calendly className="text-3xl" />
+              </div>
+              <div>
+                <p className="text-base">Book a call with us</p>
+              </div>
+            </Link>
           </form>
         </div>
       </Container>
