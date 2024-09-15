@@ -168,7 +168,7 @@ export default function Pricing() {
 
   return (
     <div className="bg-gradient-to-r from-[#f2f2f2] to-white">
-      <Container className="flex-col md:px-0 px-4 items-start">
+      <Container className="flex-col md:px-0 px-4">
         <div className="py-12 flex flex-col md:items-center items-start w-full">
           <div className="bg-black flex w-fit text-sm mb-6 items-center justify-center gap-2 rounded-full">
             <FlexibleBadge text="Pricing" />
@@ -209,8 +209,8 @@ export default function Pricing() {
               ))}
             </div>
           </div>
-          <div className="mt-8 text-black">
-            <p className="text-sm flex justify-center items-center">
+          <div className="mt-10 text-black w-full text-center">
+            <p className="text-sm">
               Feel free to cancel or pause the subscription.
             </p>
           </div>
