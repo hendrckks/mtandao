@@ -1,9 +1,105 @@
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { Link } from 'react-router-dom';
 import Container from '../../components/Container';
 import { Calendly } from '../../components/icons/Calendly';
 import FlexibleBadge from '../../components/TitleBadge';
 
-const Contact = () => {
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
+interface FormErrors {
+  name?: string;
+  email?: string;
+  message?: string;
+}
+
+const Contact: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const [errors, setErrors] = useState<FormErrors>({});
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const [submitResult, setSubmitResult] = useState<string | null>(null);
+
+  const handleInputChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const validateForm = (): boolean => {
+    const newErrors: FormErrors = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = 'Name is required';
+    } else if (formData.name.trim().length < 2) {
+      newErrors.name = 'Name must be at least 2 characters long';
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email is required';
+    } else if (!emailRegex.test(formData.email)) {
+      newErrors.email = 'Invalid email address';
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = 'Message is required';
+    } else if (formData.message.trim().length < 10) {
+      newErrors.message = 'Message must be at least 10 characters long';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setErrors({});
+    setSubmitResult(null);
+
+    if (validateForm()) {
+      try {
+        const response = await fetch(
+          'https://formsubmit.co/ajax/samueltetenga@gmail.com',
+          {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Accept: 'application/json',
+            },
+            body: JSON.stringify({
+              name: formData.name,
+              email: formData.email,
+              message: formData.message,
+            }),
+          }
+        );
+
+        const result = await response.json();
+
+        if (result.success === 'true') {
+          setSubmitResult('Message sent successfully!');
+          setFormData({ name: '', email: '', message: '' });
+        } else {
+          throw new Error('Failed to send message');
+        }
+      } catch (error) {
+        setSubmitResult('Failed to send message. Please try again later.');
+        console.error('Form submission error:', error);
+      }
+    }
+
+    setIsSubmitting(false);
+  };
+
   return (
     <div className="min-h-[100vh] w-full bg-white">
       <Container className="flex-col md:py-48 py-40 text-black md:items-start items-center">
@@ -21,28 +117,75 @@ const Contact = () => {
           </p>
         </div>
         <div className="md:w-1/2 w-full md:p-0 p-6">
-          <form>
-            <label className="text-sm mt-4 text-[#787878]">Name</label>
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="border-2 mt-2 border-gray-300 p-2 w-full rounded-lg focus:outline-none"
-            />
-            <label className="text-sm mt-4 text-[#787878]">Email</label>
-            <input
-              type="email"
-              placeholder="Email"
-              className="border-2 mt-2 border-gray-300 p-2 w-full rounded-lg focus:outline-none"
-            />
-            <label className="text-sm mt-4 text-[#787878]">Message</label>
-            <input
-              type="text"
-              placeholder="Message"
-              className="border-2 mt-2 border-gray-300 p-20 w-full rounded-lg focus:outline-none"
-            />
-            <button className="bg-black mt-5 text-white rounded-lg focus:outline-none flex h-10 items-center justify-center w-full">
-              Submit
+          <form onSubmit={handleSubmit}>
+            <div className="mb-4">
+              <label htmlFor="name" className="text-sm mt-4 text-[#787878]">
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                placeholder="Your Name"
+                className="border-2 mt-2 border-gray-300 p-2 w-full rounded-lg focus:outline-none"
+              />
+              {errors.name && (
+                <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+              )}
+            </div>
+            <div className="mb-4">
+              <label htmlFor="email" className="text-sm mt-4 text-[#787878]">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                placeholder="Email"
+                className="border-2 mt-2 border-gray-300 p-2 w-full rounded-lg focus:outline-none"
+              />
+              {errors.email && (
+                <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+              )}
+            </div>
+            <div className="mb-4">
+              <label htmlFor="message" className="text-sm mt-4 text-[#787878]">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                placeholder="Message"
+                className="border-2 mt-2 border-gray-300 p-2 w-full rounded-lg focus:outline-none h-32"
+              />
+              {errors.message && (
+                <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+              )}
+            </div>
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="bg-black mt-5 text-white rounded-lg focus:outline-none flex h-10 items-center justify-center w-full disabled:opacity-50"
+            >
+              {isSubmitting ? 'Submitting...' : 'Submit'}
             </button>
+            {submitResult && (
+              <p
+                className={`mt-2 text-center text-sm ${
+                  submitResult.includes('success')
+                    ? 'text-green-500'
+                    : 'text-red-500'
+                }`}
+              >
+                {submitResult}
+              </p>
+            )}
             <Link
               to="https://cal.com/devcook/devcook-intro"
               className="flex p-4 border hover:bg-black hover:text-white transition-colors duration-300 items-center text-black justify-center mt-4 bg-white border-black rounded-lg space-x-2"
