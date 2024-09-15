@@ -18,7 +18,7 @@ interface PriceToggleProps {
 const PriceToggle: React.FC<PriceToggleProps> = ({ isQuarterly, onToggle }) => {
   return (
     <div className="mb-8 flex-col text-center">
-      <h3 className="text-3xl text-[#b4b3b1] py-10">
+      <h3 className="text-3xl text-[#b4b3b1] py-2 md:py-10">
         Select the quarterly payment plan <br />
         to get a<span className="text-black"> 10% discount</span>
       </h3>
@@ -187,8 +187,9 @@ export default function Pricing() {
           </div>
           <div className="text-black text-base font-normal mb-12">
             <p className="py-4">
-              We developed different monthly pricing options for you and your
+              We've developed different monthly pricing options for you and your
               business needs.
+              <br />
               <br /> Feel free to cancel or pause the subscription.
             </p>
           </div>
