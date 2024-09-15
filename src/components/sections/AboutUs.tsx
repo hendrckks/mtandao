@@ -22,8 +22,8 @@ const teamMembers = [
   {
     image: '/testimonials/testimonial1.webp',
     name: 'Amy Martinez',
-    role: 'Framer Developer',
-    bio: 'Amy takes care of everything related to Framer. She designs and develops full functional websites in multiple niches.',
+    role: 'Figma Designer',
+    bio: 'Amy takes care of everything related to Figma. She designs websites in multiple niches. And let me tell you, she has an eye for good things.',
     link: 'https://x.com/home',
   },
   // {
