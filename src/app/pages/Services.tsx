@@ -62,12 +62,12 @@ const servicesData = [
       'Analytics and reporting',
     ],
     images: [
-      '/web design/60.avif',
-      '/web design/61.avif',
-      '/web design/62.avif',
-      '/web design/63.avif',
-      '/web design/64.avif',
-      '/web design/65.avif',
+      '/commerce/cv.webp',
+      '/commerce/xc.webp',
+      '/commerce/xd.webp',
+      '/commerce/xf.webp',
+      '/commerce/xg.webp',
+      '/commerce/xz.webp',
     ],
   },
 ];
