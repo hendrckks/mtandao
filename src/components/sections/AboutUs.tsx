@@ -6,11 +6,11 @@ import TeamMember from '../TeamMembers';
 
 const teamMembers = [
   {
-    image: '/testimonials/testimonial1.webp',
-    name: 'Martha Martins',
-    role: 'Lead Web Designer',
-    bio: 'Martha is the mastermind behind flawless, intuitive interfaces. Leo makes sure every website is accessible to all users.',
-    link: 'https://x.com/home',
+    image: '/testimonials/me.jpg',
+    name: 'Samuel Tetenga',
+    role: 'Lead Web developer',
+    bio: 'Sam is the mastermind behind flawless, intuitive interfaces. Leo makes sure every website is accessible to all users.',
+    link: 'https://x.com/atomic_ke',
   },
   {
     image: '/testimonials/testimonial2.webp',
@@ -20,7 +20,7 @@ const teamMembers = [
     link: 'https://x.com/home',
   },
   {
-    image: '/testimonials/testimonial5.webp',
+    image: '/testimonials/testimonial1.webp',
     name: 'Amy Martinez',
     role: 'Framer Developer',
     bio: 'Amy takes care of everything related to Framer. She designs and develops full functional websites in multiple niches.',
