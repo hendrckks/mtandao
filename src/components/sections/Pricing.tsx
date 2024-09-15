@@ -67,7 +67,7 @@ const AnimatedPrice: React.FC<AnimatedPriceProps> = ({
   const [displayPrice, setDisplayPrice] = useState<number>(price);
 
   useEffect(() => {
-    const targetPrice = isQuarterly ? price * 3 * 0.9 : price;
+    const targetPrice = isQuarterly ? price * 0.9 : price;
     const duration = 700;
     const steps = 40;
     const stepDuration = duration / steps;
@@ -111,7 +111,7 @@ const pricingPlans: Array<
     monthlylink:
       'https://devcook.myshopify.com/cart/45959777714333:1?channel=buy_button',
     quaterlylink:
-      'https://devcook.myshopify.com/cart/45959777714333:1?channel=buy_button',
+      'https://devcook.myshopify.com/cart/45959931232413:1?channel=buy_button',
   },
   {
     title: 'Prix fixe',
@@ -129,7 +129,7 @@ const pricingPlans: Array<
     monthlylink:
       'https://devcook.myshopify.com/cart/45959842332829:1?channel=buy_button',
     quaterlylink:
-      'https://devcook.myshopify.com/cart/45959842332829:1?channel=buy_button',
+      'https://33a666-0c.myshopify.com/cart/45959948501149:1?channel=buy_button',
   },
 ];
 
