@@ -9,7 +9,7 @@ const teamMembers = [
     image: '/testimonials/testimonial1.webp',
     name: 'Martha Martins',
     role: 'Lead Web Designer',
-    bio: 'Leo is the mastermind behind flawless, intuitive interfaces. Leo makes sure every website is accessible to all users.',
+    bio: 'Martha is the mastermind behind flawless, intuitive interfaces. Leo makes sure every website is accessible to all users.',
     link: 'https://x.com/home',
   },
   {

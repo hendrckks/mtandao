@@ -169,11 +169,11 @@ export default function Pricing() {
   return (
     <div className="bg-gradient-to-r from-[#f2f2f2] to-white">
       <Container className="flex-col md:px-0 px-4 items-start">
-        <div className="py-12 flex flex-col w-full">
-          <div className="bg-black flex w-fit text-sm mb-6 items-center justify-center gap-2 rounded-full px-4 py-2">
+        <div className="py-12 flex flex-col md:items-center items-start w-full">
+          <div className="bg-black flex w-fit text-sm mb-6 items-center justify-center gap-2 rounded-full">
             <FlexibleBadge text="Pricing" />
           </div>
-          <div className="text-black mb-8">
+          <div className="text-black mt-4 md:text-center mb-8">
             <p className="text-4xl font-semibold">Transactions made simple.</p>
             <p className="text-black text-3xl mt-6">
               No contracts. No headaches.
@@ -189,8 +189,6 @@ export default function Pricing() {
             <p className="py-4">
               We've developed different monthly pricing options for you and your
               business needs.
-              <br />
-              <br /> Feel free to cancel or pause the subscription.
             </p>
           </div>
           <PriceToggle isQuarterly={isQuarterly} onToggle={togglePricing} />
@@ -210,6 +208,11 @@ export default function Pricing() {
                 <AdditionalOption key={index} {...option} />
               ))}
             </div>
+          </div>
+          <div className="mt-8 text-black">
+            <p className="text-sm flex justify-center items-center">
+              Feel free to cancel or pause the subscription.
+            </p>
           </div>
         </div>
       </Container>
