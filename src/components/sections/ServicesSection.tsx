@@ -2,48 +2,54 @@ import React from 'react';
 import Container from '../Container';
 import { motion } from 'framer-motion';
 import FlexibleBadge from '../TitleBadge';
-import { Wrench } from '../icons/Wrench';
+// import { Wrench } from '../icons/Wrench';
 import { ArrowCursor2 } from '../icons/Navigater';
-import { Comments } from '../icons/Comment';
-import { Diamond } from '../icons/Diamond';
-import { ArrowRoundRight } from '../icons/ArrowRoundRight';
-import { Ticktick } from '../icons/Tick';
-import { Rocket } from '../icons/Rocket';
-import { GraphArrowIncreaseSolid } from '../icons/KickStater';
-import { MacCommand } from '../icons/Services1';
-import { X } from '../icons/Twitter';
-import { Users } from '../icons/Users';
+// import { ArrowRoundRight } from '../icons/ArrowRoundRight';
+// import { Rocket } from '../icons/Rocket';
+// import { GraphArrowIncreaseSolid } from '../icons/KickStater';
+// import { MacCommand } from '../icons/Services1';
+// import { X } from '../icons/Twitter';
+// import { Users } from '../icons/Users';
 import { Link } from 'react-router-dom';
 import { ChefHatMinimalisticOutline } from '../icons/Chef';
+import { Figma } from '../icons/Figma';
+import { FrameOutline } from '../icons/frame';
+import { ReactIcon } from '../icons/React';
+import { BrandStocktwits } from '../icons/Branding';
+import { Shopify } from '../icons/shopify';
+import { Api } from '../icons/Api';
+import { Hostinger } from '../icons/Hosting';
+import { GraphBar } from '../icons/Graph';
+import { Automation4 } from '../icons/Automations';
 
 const topServices = [
-  { text: 'Webflow experts', icon: Rocket },
-  { text: 'Branding', icon: Ticktick },
-  { icon: ArrowRoundRight },
-  { text: 'Web developers', icon: ArrowCursor2 },
-  { text: 'Landing pages', icon: Comments },
-  { text: 'Framer development', icon: Diamond },
-  { text: 'Webflow experts', icon: Rocket },
-  { text: 'Branding', icon: Ticktick },
-  { icon: ArrowRoundRight },
-  { text: 'Web developers', icon: ArrowCursor2 },
-  { text: 'Landing pages', icon: Comments },
-  { text: 'Framer development', icon: Diamond },
+  // { text: 'Webflow experts', icon: Rocket },
+  { text: 'React development', icon: ReactIcon },
+  { text: 'Brand identity', icon: BrandStocktwits },
+  { text: 'E-commerce solutions', icon: Shopify },
+  { icon: Figma },
+  // { text: 'Web developers', icon: ArrowCursor2 },
+  { text: 'Landing pages', icon: FrameOutline },
+  { text: 'Figma designs', icon: Figma },
+  { icon: ReactIcon },
+  // { text: 'Webflow experts', icon: Rocket },
+  { text: 'Brand identity', icon: BrandStocktwits },
+  // { text: 'E-commerce solutions', icon: Shopify },
+  { text: 'Landing pages', icon: FrameOutline },
+  { text: 'Figma designs', icon: Figma },
 ];
 
 const bottomServices = [
-  { text: 'Innovative solutions', icon: Users },
-  { text: 'Strategic planning', icon: GraphArrowIncreaseSolid },
-  { text: 'Problem solving', icon: MacCommand },
-  { text: 'Data analytics', icon: X },
-  { text: 'Cybersecurity', icon: Wrench },
-  { text: 'Cloud services', icon: ArrowCursor2 },
-  { text: 'Innovative solutions', icon: Users },
-  { text: 'Strategic planning', icon: GraphArrowIncreaseSolid },
-  { text: 'Problem solving', icon: MacCommand },
-  { text: 'Data analytics', icon: X },
-  { text: 'Cybersecurity', icon: Wrench },
-  { text: 'Cloud services', icon: ArrowCursor2 },
+  { text: 'Brand identity', icon: ArrowCursor2 },
+  { text: 'Api intergrations', icon: Api },
+  // { text: 'Problem solving', icon: MacCommand },
+  // { text: 'Cybersecurity', icon: Wrench },
+  { text: 'Domain and Hosting', icon: Hostinger },
+  { text: 'Api intergrations', icon: Api },
+  { text: 'Web analytics', icon: GraphBar },
+  // { text: 'Cybersecurity', icon: Wrench },
+  { text: 'Automations intergrations', icon: Automation4 },
+  { text: 'Brand identity', icon: ArrowCursor2 },
 ];
 
 const ServicesSection: React.FC = () => {
@@ -119,7 +125,7 @@ const ServicesSection: React.FC = () => {
                 }}
               >
                 <service.icon
-                  className={`text-base text-blue-400 ${
+                  className={`text-base text-black ${
                     service.text ? '' : 'w-6 h-6'
                   }`}
                 />

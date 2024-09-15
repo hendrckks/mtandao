@@ -34,12 +34,12 @@ const TestimonialSnippet: React.FC<TestimonialSnippetProps> = ({
             alt="testimonial"
           />
           <p className="text-[20px] mt-4 text- font-medium">
-            "We're stocked stoked with the work from Devcook. Very clean work"
+            "We're stoked with the work from Devcook. Very clean work"
           </p>
           <div className="flex gap-2 mt-2 text-[14px] text-sm">
             <p className="">Amy</p>
             <span className="text-[#b8ff45]">-</span>
-            <p>Lemon AI co-founder</p>
+            <p>Biscotto haven founder</p>
           </div>
         </div>
         <div className="text- mt-4 gap-4 flex items-center">

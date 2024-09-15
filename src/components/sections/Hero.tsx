@@ -7,7 +7,7 @@ import { Phone } from '../icons/Contact';
 export default function Hero() {
   return (
     <div className="bg-white w-full">
-      <Container className="mb-10 md:min-h-[700px] md:min-w-[1300px] h-fit px-4 w-full">
+      <Container className="mb-10 md:min-h-[700px] md:min-w-[1300px] h-fit md:px-2 px-4 w-full">
         <div className="flex flex-col md:mt-10 mt-0 md:flex-row w-full">
           <div className="md:py-24 py-14 w-full text-black md:w-1/2">
             <div>
@@ -24,7 +24,10 @@ export default function Hero() {
               <p className="mt-4 md:mt-[16px] font-normal text-sm md:text-[18px]">
                 Design subscriptions and development for everyone.
                 <br />
-                <br /> Pause or cancel anytime.
+                <br />{' '}
+                <span className="text-[#b4b3b1] text-sm">
+                  Pause or cancel anytime.
+                </span>
               </p>
             </div>
             <div className="mt-8 md:mt-10">
@@ -43,7 +46,7 @@ export default function Hero() {
           </div>
           <div className="md:py-24 py-8 w-full md:w-1/2 text-black">
             <img
-              src="/framer 2.webp"
+              src="/commerce/xd.jpg"
               alt="we do"
               className="max-w-full h-auto"
             />

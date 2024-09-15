@@ -11,7 +11,7 @@ const servicesData = [
       'We design high-converting websites that help you stand out in the global market and increase revenue.',
     features: [
       'Custom web applications',
-      "Built by React and it's frameworks",
+      'Built by React',
       'Frontend development',
       'Backend development',
       'API integration',
@@ -34,7 +34,7 @@ const servicesData = [
     features: [
       'High-converting website',
       'Multi page',
-      "Built by React and it's frameworks",
+      'Built by React',
       'Website copy included',
       'Responsive design',
       'SEO optimization',
@@ -54,7 +54,7 @@ const servicesData = [
     description:
       'We create powerful e-commerce platforms to help you sell products and services online effectively.',
     features: [
-      'Custom e-commerce websites',
+      'Custom E-commerce websites',
       'Shopping cart integration',
       'Payment gateway setup',
       'Inventory management',
@@ -64,7 +64,7 @@ const servicesData = [
     images: [
       '/commerce/cv.webp',
       '/commerce/xc.webp',
-      '/commerce/xd.webp',
+      '/commerce/xd.jpg',
       '/commerce/xf.webp',
       '/commerce/xg.webp',
       '/commerce/xz.webp',

@@ -56,7 +56,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-3 mt-5 md:mt-0 md:w-1/2">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-3 mt-4 md:mt-0 md:w-1/2">
         {images.slice(0, 3).map((image, index) => (
           <div key={index} className="w-full">
             <img
