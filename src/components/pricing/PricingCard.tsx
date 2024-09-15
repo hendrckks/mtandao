@@ -8,12 +8,13 @@ interface Feature {
   included: boolean;
 }
 
-interface PricingCardProps {
+export interface PricingCardProps {
   title: string;
-  price: number;
+  price: React.ReactNode;
   description: string;
   features: Feature[];
   icon: React.ReactNode;
+  isQuarterly: boolean;
 }
 
 const PricingCard: React.FC<PricingCardProps> = ({
@@ -23,8 +24,9 @@ const PricingCard: React.FC<PricingCardProps> = ({
   features,
   icon,
 }) => {
-  // Format the price with a comma at the thousand figure
-  const formattedPrice = price.toLocaleString('en-US');
+  // Format the price if it's a number, otherwise use it as is
+  const formattedPrice =
+    typeof price === 'number' ? price.toLocaleString('en-US') : price;
 
   return (
     <div className="bg-white text-black rounded-3xl shadow-lg p-8 flex flex-col h-full">
@@ -69,7 +71,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
           </Link>
         </div>
       </div>
-      <p className="text-center text-sm text-[#7329e3] mt-2">
+      <p className="text-center text-sm text-[#7329e3] mt-4">
         Powered by stripe
       </p>
     </div>

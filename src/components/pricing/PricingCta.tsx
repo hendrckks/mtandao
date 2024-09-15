@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-interface AdditionalOptionProps {
+export interface AdditionalOptionProps {
   backgroundColor: 'black' | 'white';
   icon: React.ReactNode;
   title: string;
@@ -20,7 +20,7 @@ const AdditionalOption: React.FC<AdditionalOptionProps> = ({
 }) => {
   const isBlackBackground = backgroundColor === 'black';
 
-  const cardClasses = `bg-${backgroundColor} rounded-3xl  h-full shadow-lg p-6 flex flex-col items-center text-center`;
+  const cardClasses = `bg-${backgroundColor} rounded-3xl h-full shadow-lg p-6 flex flex-col items-center text-center`;
   const titleClasses = `text-xl font-semibold mb-2 ${
     isBlackBackground ? 'text-white' : 'text-black'
   }`;
