@@ -64,7 +64,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
       </ul>
       <Link to={link} className="flex-col text-center">
         <button className="mt-4 bg-black text-white text-sm py-2 px-4 rounded-lg transition-colors">
-          0 / 0 spots available
+          Subscribe
         </button>
         <div className="mt-2 text-sm">or</div>
         <div className="flex-col ">
