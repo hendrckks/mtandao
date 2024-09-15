@@ -7,7 +7,7 @@ import TeamMember from '../TeamMembers';
 const teamMembers = [
   {
     image: '/testimonials/testimonial1.webp',
-    name: 'Leo Martins',
+    name: 'Martha Martins',
     role: 'Lead Web Designer',
     bio: 'Leo is the mastermind behind flawless, intuitive interfaces. Leo makes sure every website is accessible to all users.',
     link: 'https://x.com/home',
@@ -21,9 +21,9 @@ const teamMembers = [
   },
   {
     image: '/testimonials/testimonial5.webp',
-    name: 'Adam David',
+    name: 'Amy Martinez',
     role: 'Framer Developer',
-    bio: 'Adam takes care of everything related to Framer. He designs and develops full functional websites in multiple niches.',
+    bio: 'Amy takes care of everything related to Framer. She designs and develops full functional websites in multiple niches.',
     link: 'https://x.com/home',
   },
   // {
