@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
     if (validateForm()) {
       try {
         const response = await fetch(
-          'https://formsubmit.co/ajax/samueltetenga@gmail.com',
+          'https://formsubmit.co/ajax/devcookagency@gmail.com',
           {
             method: 'POST',
             headers: {
