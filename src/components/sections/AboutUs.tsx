@@ -56,7 +56,7 @@ const AboutUs: React.FC = () => {
         <div className="flex flex-col md:flex-row w-full mb-12">
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
             <FlexibleBadge icon={Users} text="About us" />
-            <h3 className="py-4 font-medium md:text-5xl text-4xl">
+            <h3 className="py-4 font-semibold md:text-5xl text-4xl">
               Meet the Devcook Team
             </h3>
             <p className="text-4xl md:text-5xl text-[#b4b3b1] font-medium">
