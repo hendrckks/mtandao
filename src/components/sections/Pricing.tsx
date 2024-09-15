@@ -18,9 +18,9 @@ interface PriceToggleProps {
 const PriceToggle: React.FC<PriceToggleProps> = ({ isQuarterly, onToggle }) => {
   return (
     <div className="mb-8 flex-col text-center">
-      <h3 className="text-3xl text-[#b4b3b1] mb-6">
+      <h3 className="text-3xl text-[#b4b3b1] py-10">
         Select the quarterly payment plan <br />
-        sto get a<span className="text-black"> 10% discount</span>
+        to get a<span className="text-black"> 10% discount</span>
       </h3>
       <div className="flex items-center justify-center mb-8">
         <span
