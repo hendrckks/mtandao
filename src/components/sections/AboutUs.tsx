@@ -67,15 +67,14 @@ const AboutUs: React.FC = () => {
             <p className="text-base">
               We're a dynamic team of digital creatives passionate about
               crafting exceptional user experiences. Combining the power of
-              React frameworks, Figma's design capabilities, and strategic
-              branding, we bring your vision to life.
+              React frameworks and Figma's design capabilities, we bring your
+              vision to life.
               <br />
               <br />
               From concept to execution, we're dedicated to delivering
               innovative, visually stunning, and functionally robust solutions.
-              Whether you need a complex web application or a captivating brand
-              identity, our expertise and commitment to excellence will ensure
-              your project stands out.
+              Our expertise and commitment to excellence will ensure your
+              project stands out.
             </p>
           </div>
         </div>
