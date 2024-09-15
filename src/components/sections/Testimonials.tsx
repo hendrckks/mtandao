@@ -19,14 +19,14 @@ const staticTestimonials: Testimonial[] = [
     role: 'e-Commerce',
     quote:
       "The Devcook crew made everything effortless. They listened to what we needed and delivered a site that's beautiful and user-friendly. These folks really know their stuff!",
-    imageUrl: '/testimonials/testimonial1.webp',
+    imageUrl: '/testimonials/testimonial5.webp',
   },
   {
     author: 'Aisha',
     role: 'Non-profit creative director',
     quote:
       "Devcook totally got our vision. They took some scattered ideas and turned them into a smooth and intuitive website. The process was super chill and we're beyond happy with the final look!",
-    imageUrl: '/testimonials/testimonial2.webp',
+    imageUrl: '/testimonials/testimonial4.webp',
   },
 ];
 
