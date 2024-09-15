@@ -104,12 +104,12 @@ const pricingPlans: Array<
     description: 'One request at a time. Pause or cancel anytime.',
     icon: <GraphArrowIncreaseSolid className="text-black" />,
     features: [
+      { text: 'Full Stack Design (no development)', included: true },
       { text: 'Unlimited Stock Photos', included: true },
       { text: 'Average 96 hour delivery', included: true },
       { text: 'Unlimited Iterations.', included: true },
       { text: 'Slack Communication.', included: true },
       { text: 'Pause or cancel anytime.', included: true },
-      { text: 'Full Stack Design (no development)', included: true },
     ],
   },
   {
@@ -118,12 +118,12 @@ const pricingPlans: Array<
     description: 'Double requests at a time. Pause or cancel anytime.',
     icon: <Rocket className="text-black" />,
     features: [
+      { text: 'Full stack design + development', included: true },
       { text: 'Unlimited Stock Photos.', included: true },
       { text: 'Updates every day.', included: true },
       { text: 'Pause or cancel anytime.', included: true },
       { text: 'Unlimited iterations.', included: true },
       { text: 'Slack communication.', included: true },
-      { text: 'Full stack design + development', included: true },
     ],
   },
 ];
