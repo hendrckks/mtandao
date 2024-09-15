@@ -17,6 +17,7 @@ const servicesData = [
       'API integration',
       'Performance optimization',
       'Ongoing support',
+      'Automations intergrations',
     ],
     images: [
       '/web design/60.avif',
