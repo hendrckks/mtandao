@@ -28,7 +28,7 @@ export default function Hero() {
               </p>
             </div>
             <div className="mt-8 md:mt-10">
-              <Link to="/contact-us">
+              <Link to="https://cal.com/samuel-tetenga/devcook-intro-call">
                 <CtaButton className="px-2 py-[7px] flex group items-center gap-4 md:w-1/3 w-2/3 relative">
                   <div className="bg-[#b8ff45] z-30 relative w-1/2 py-2 flex items-center justify-center group-hover:w-full ease-out transition-all duration-300 px-2 rounded-full">
                     <ArrowRoundRight className="text-black group-hover:text-transparent font-bold text-[22px]" />

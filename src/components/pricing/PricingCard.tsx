@@ -66,7 +66,10 @@ const PricingCard: React.FC<PricingCardProps> = ({
         </button>
         <div className="mt-2 text-sm">or</div>
         <div className="flex-col ">
-          <Link to="/contact-us" className="underline text-sm">
+          <Link
+            to="https://cal.com/samuel-tetenga/devcook-intro-call"
+            className="underline text-sm"
+          >
             Book a call
           </Link>
         </div>

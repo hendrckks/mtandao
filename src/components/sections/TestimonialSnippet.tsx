@@ -26,7 +26,7 @@ const TestimonialSnippet: React.FC<TestimonialSnippetProps> = ({
 
   return (
     <div className="flex bg-[#0d0d0d] py-14 text-white w-ful md:min-w-[1260px]">
-      <Container className="md:flex flex- flex-wrap md:justify-between w-full">
+      <Container className="md:flex flex-row md:px-0 px-4 flex-wrap md:justify-between w-full">
         <div className="flex-col items-center">
           <img
             src="/testimonials/testimonial1.webp"
@@ -36,7 +36,7 @@ const TestimonialSnippet: React.FC<TestimonialSnippetProps> = ({
           <p className="text-[20px] mt-4 text- font-medium">
             "We're stocked stoked with the work from Devcook. Very clean work"
           </p>
-          <div className="flex gap-2 mt-2 text-[14px] text-">
+          <div className="flex gap-2 mt-2 text-[14px] text-sm">
             <p className="">Amy</p>
             <span className="text-[#b8ff45]">-</span>
             <p>Lemon AI co-founder</p>
