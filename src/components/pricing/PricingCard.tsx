@@ -77,7 +77,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
         </div>
       </Link>
       <p className="text-center text-sm text-[#7329e3] mt-4">
-        Powered by stripe
+        Powered by shopify
       </p>
     </div>
   );
