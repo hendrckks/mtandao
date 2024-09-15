@@ -99,7 +99,7 @@ const pricingPlans: Array<
   Omit<PricingCardProps, 'price' | 'isQuarterly'> & { price: number }
 > = [
   {
-    title: 'Kickstarter',
+    title: 'Repas standard',
     price: 2595,
     description: 'One request at a time. Pause or cancel anytime.',
     icon: <GraphArrowIncreaseSolid className="text-black" />,
@@ -111,9 +111,10 @@ const pricingPlans: Array<
       { text: 'Slack Communication.', included: true },
       { text: 'Pause or cancel anytime.', included: true },
     ],
+    link: 'https://33a666-0c.myshopify.com/cart/45959777714333:1?channel=buy_button',
   },
   {
-    title: 'Pro',
+    title: 'Prix fixe',
     price: 3995,
     description: 'Double requests at a time. Pause or cancel anytime.',
     icon: <Rocket className="text-black" />,
@@ -125,6 +126,7 @@ const pricingPlans: Array<
       { text: 'Unlimited iterations.', included: true },
       { text: 'Slack communication.', included: true },
     ],
+    link: 'https://33a666-0c.myshopify.com/cart/45959842332829:1?channel=buy_button',
   },
 ];
 

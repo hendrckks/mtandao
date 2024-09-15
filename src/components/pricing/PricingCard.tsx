@@ -15,6 +15,7 @@ export interface PricingCardProps {
   features: Feature[];
   icon: React.ReactNode;
   isQuarterly: boolean;
+  link: string;
 }
 
 const PricingCard: React.FC<PricingCardProps> = ({
@@ -23,6 +24,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
   description,
   features,
   icon,
+  link,
 }) => {
   // Format the price if it's a number, otherwise use it as is
   const formattedPrice =
@@ -60,7 +62,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
           </li>
         ))}
       </ul>
-      <div className="flex-col text-center">
+      <Link to={link} className="flex-col text-center">
         <button className="mt-4 bg-black text-white text-sm py-2 px-4 rounded-lg transition-colors">
           0 / 0 spots available
         </button>
@@ -73,7 +75,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
             Book a call
           </Link>
         </div>
-      </div>
+      </Link>
       <p className="text-center text-sm text-[#7329e3] mt-4">
         Powered by stripe
       </p>
