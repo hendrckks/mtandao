@@ -15,7 +15,8 @@ export interface PricingCardProps {
   features: Feature[];
   icon: React.ReactNode;
   isQuarterly: boolean;
-  link: string;
+  monthlylink: string;
+  quaterlylink: string;
 }
 
 const PricingCard: React.FC<PricingCardProps> = ({
@@ -24,11 +25,11 @@ const PricingCard: React.FC<PricingCardProps> = ({
   description,
   features,
   icon,
-  link,
+  isQuarterly,
+  monthlylink,
+  quaterlylink,
 }) => {
-  // Format the price if it's a number, otherwise use it as is
-  const formattedPrice =
-    typeof price === 'number' ? price.toLocaleString('en-US') : price;
+  const subscriptionLink = isQuarterly ? quaterlylink : monthlylink;
 
   return (
     <div className="bg-white text-black rounded-3xl shadow-lg p-8 flex flex-col h-full">
@@ -39,8 +40,10 @@ const PricingCard: React.FC<PricingCardProps> = ({
         <h3 className="text-xl font-medium text-black">{title}</h3>
       </div>
       <p className="text-[42px] font-medium mt-4 flex items-center mb-2">
-        $<span>{formattedPrice}</span>/
-        <span className="text-2xl font-semibold">m</span>
+        $<span>{price}</span>/
+        <span className="text-2xl font-semibold">
+          {isQuarterly ? 'q' : 'm'}
+        </span>
       </p>
       <p className="text-sm py-6">{description}</p>
       <ul className="flex-grow mb-2">
@@ -62,7 +65,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
           </li>
         ))}
       </ul>
-      <Link to={link} className="flex-col text-center">
+      <a href={subscriptionLink} className="flex-col text-center">
         <button className="mt-4 bg-black w-full text-white text-sm py-2 px-4 rounded-lg transition-colors">
           Subscribe
         </button>
@@ -75,7 +78,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
             Book a call
           </Link>
         </div>
-      </Link>
+      </a>
       <p className="text-center text-sm text-[#7329e3] mt-4">
         Powered by shopify
       </p>

@@ -67,7 +67,7 @@ const AnimatedPrice: React.FC<AnimatedPriceProps> = ({
   const [displayPrice, setDisplayPrice] = useState<number>(price);
 
   useEffect(() => {
-    const targetPrice = isQuarterly ? price * 0.9 : price;
+    const targetPrice = isQuarterly ? price * 3 * 0.9 : price;
     const duration = 700;
     const steps = 40;
     const stepDuration = duration / steps;
@@ -91,9 +91,6 @@ const AnimatedPrice: React.FC<AnimatedPriceProps> = ({
   return <span>{displayPrice.toLocaleString()}</span>;
 };
 
-// PricingCard Component
-// AdditionalOption Component
-
 // Pricing Plans Data
 const pricingPlans: Array<
   Omit<PricingCardProps, 'price' | 'isQuarterly'> & { price: number }
@@ -111,7 +108,10 @@ const pricingPlans: Array<
       { text: 'Slack Communication.', included: true },
       { text: 'Pause or cancel anytime.', included: true },
     ],
-    link: 'https://33a666-0c.myshopify.com/cart/45959777714333:1?channel=buy_button',
+    monthlylink:
+      'https://devcook.myshopify.com/cart/45959777714333:1?channel=buy_button',
+    quaterlylink:
+      'https://devcook.myshopify.com/cart/45959777714333:1?channel=buy_button',
   },
   {
     title: 'Prix fixe',
@@ -126,7 +126,10 @@ const pricingPlans: Array<
       { text: 'Unlimited iterations.', included: true },
       { text: 'Slack communication.', included: true },
     ],
-    link: 'https://33a666-0c.myshopify.com/cart/45959842332829:1?channel=buy_button',
+    monthlylink:
+      'https://devcook.myshopify.com/cart/45959842332829:1?channel=buy_button',
+    quaterlylink:
+      'https://devcook.myshopify.com/cart/45959842332829:1?channel=buy_button',
   },
 ];
 
