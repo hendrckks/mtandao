@@ -60,7 +60,9 @@ const Footer: React.FC = () => {
             onClick={handleSectionClick('testimonials')}
           />
         </div>
-        <p className="text-sm text-[#b4b3b1]">Built by @Tetenga.</p>
+        <p className="text-sm text-[#b4b3b1]">
+          © 2024 Devbook LLC. All rights reserved.
+        </p>
       </Container>
     </div>
   );
