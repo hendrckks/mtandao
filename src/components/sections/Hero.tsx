@@ -7,7 +7,7 @@ import { Phone } from '../icons/Contact';
 export default function Hero() {
   return (
     <div className="bg-white w-full">
-      <Container className="mb-10 min-h-[700px] lg:min-w-[1300px] h-fit px-4 md:px-24 lg:px-10 w-full">
+      <Container className="mb-10 min-h-[700px] lg:min-w-[1300px] md:max-w-[1200px] h-fit px-4 md:px-24 lg:px-10 w-full">
         <div className="flex flex-col lg:flex-row w-full">
           <div className="py-16 lg:py-24 w-full text-black lg:w-1/2">
             <div>

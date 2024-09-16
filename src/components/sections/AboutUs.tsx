@@ -79,11 +79,11 @@ const AboutUs: React.FC = () => {
           </div>
         </div>
       </Container>
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:px-36 lg:px-80 px-4 mt-20 gap-8">
+      <Container className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:px-4 lg:px-0 px-4 mt-20 gap-8">
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />
         ))}
-      </div>
+      </Container>
     </div>
   );
 };

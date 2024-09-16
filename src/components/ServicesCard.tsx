@@ -3,7 +3,6 @@ import FlexibleBadge from './TitleBadge';
 import { Ticktick } from './icons/Tick';
 import { Link } from 'react-router-dom';
 import { NavbarContext } from './navigation/NavbarContext';
-import Container from './Container';
 
 interface ServiceCardProps {
   title: string;
@@ -57,7 +56,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-3 mt-4 md:mt-10lg:mt-0 md:w-full lg:w-1/2">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-3 mt-4 md:mt-10 lg:mt-0 md:w-full lg:w-1/2">
         {images.slice(0, 3).map((image, index) => (
           <div key={index} className="w-full">
             <img
