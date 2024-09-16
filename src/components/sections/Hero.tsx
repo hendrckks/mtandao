@@ -7,19 +7,20 @@ import { Phone } from '../icons/Contact';
 export default function Hero() {
   return (
     <div className="bg-white w-full">
-      <Container className="mb-10 min-h-[700px] lg:min-w-[1300px] md:max-w-[1200px] h-fit px-4 md:px-24 lg:px-10 w-full">
-        <div className="flex flex-col lg:flex-row w-full">
+      <Container className="mb-10 min-h-[700px] lg:min-w-[1300px] md:max-w-[1200px] h-fit px-4 md:px-24 lg:px-6 w-full">
+        <div className="flex flex-col lg:flex-row gap-4 w-full">
           <div className="py-16 lg:py-24 w-full text-black lg:w-1/2">
             <div>
-              <h2 className="text-5xl md:text-7xl lg:text-7xl  font-semibold">
-                A Web Development <br className="hidden lg:inline" /> Agency
-                With a Twist
+              <h2 className="text-5xl md:text-7xl lg:text-6xl  font-semibold">
+                Premium web <br className="hidden lg:inline" />
+                designs and
+                <br className="hidden lg:inline" /> development to grow your
+                business
               </h2>
               <p className="py-6 mt-[16px] font-normal text-base md:text-xl lg:text-xl">
-                Devcook replaces unreliable freelancers and expensive agencies
-                <br />
-                for one flat monthly fee, with designs delivered so fast that it
-                will blow your mind.
+                Devcook replaces unreliable freelancers and expensive
+                <br /> agencies for one flat monthly fee, with designs delivered
+                so fast that it will blow your mind.
               </p>
               <p className="mt-[16px] font-normal text-sm md:text-base lg:text-[18px]">
                 Design and development subscriptions for everyone.
