@@ -22,7 +22,7 @@ export default function Hero() {
                 will blow your mind.
               </p>
               <p className="mt-[16px] font-normal text-sm md:text-base lg:text-[18px]">
-                Design subscriptions and development for everyone.
+                Design and development subscriptions for everyone.
                 <br />
                 <br />{' '}
                 <span className="text-[#b4b3b1] text-sm">
