@@ -3,6 +3,7 @@ import FlexibleBadge from './TitleBadge';
 import { Ticktick } from './icons/Tick';
 import { Link } from 'react-router-dom';
 import { NavbarContext } from './navigation/NavbarContext';
+import Container from './Container';
 
 interface ServiceCardProps {
   title: string;
@@ -25,7 +26,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     };
 
   return (
-    <div className="bg-[#f2f2f2] md:min-w-[1200px] flex-col md:flex-row flex rounded-md shadow-md p-5">
+    <div className="bg-[#f2f2f2] lg:min-w-[1200px] md:w-full flex-col lg:flex-row flex rounded-md shadow-md p-5">
       <div className="md:w-1/2">
         <h3 className="text-2xl mb-3">{title}</h3>
         <p className="text-sm w-auto md:w-[438px] mb-4">{description}</p>
@@ -56,7 +57,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-3 mt-4 md:mt-0 md:w-1/2">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-3 mt-4 md:mt-10lg:mt-0 md:w-full lg:w-1/2">
         {images.slice(0, 3).map((image, index) => (
           <div key={index} className="w-full">
             <img

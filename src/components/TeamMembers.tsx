@@ -27,7 +27,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
 
   return (
     <div className="bg-[#f2f2f2] border border-[#d8d9ec] gap-6 p-3 text-black rounded-lg shadow-md w-full flex-row md:flex items-center justify-between overflow-hidden">
-      <div className="md:h-60 h-fit w-full md:w-64 p-2 border border-[#d8d9ec] rounded-lg bg-white">
+      <div className="md:h-60 lg:h-64 h-fit w-full md:w-64 p-2 border border-[#d8d9ec] rounded-lg bg-white">
         {imageLoaded ? (
           <img
             className="object-cover border border-[#d8d9ec] rounded-lg"

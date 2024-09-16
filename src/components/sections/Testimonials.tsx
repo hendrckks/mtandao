@@ -71,7 +71,7 @@ const scrollableTestimonials: Testimonial[] = [
 const Testimonials: React.FC = () => {
   return (
     <div className="bg-white text-black py-20">
-      <Container className="flex md:px-0 px-4 mt-10 flex-col items-center">
+      <Container className="flex lg:px-0 md:px-10 px-4 mt-10 flex-col items-center">
         <div className="flex flex-col items-center text-center mb-12">
           <FlexibleBadge
             className="flex items-center justify-center"
@@ -87,7 +87,7 @@ const Testimonials: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-8 md:gap-4 mb-16">
           {staticTestimonials.map((testimonial, index) => (
             <TestimonialCard key={index} {...testimonial} />
           ))}

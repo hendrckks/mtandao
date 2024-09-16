@@ -82,7 +82,10 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
         >
           <div className="flex gap-4 transition-transform duration-300 ease-in-out">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="w-full md:w-1/3 flex-shrink-0">
+              <div
+                key={index}
+                className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0"
+              >
                 <TestimonialCard {...testimonial} isSmall={true} />
               </div>
             ))}

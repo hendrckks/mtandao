@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
 
   return (
     <div className="min-h-[100vh] w-full bg-white">
-      <Container className="flex-col md:py-48 py-40 text-black md:items-start items-center">
+      <Container className="flex-col lg:px-0 md:px-10 md:py-48 py-40 text-black md:items-start items-center">
         <div className="mb-5 md:px-0 px-4">
           <FlexibleBadge
             text="Contact us"
@@ -116,7 +116,7 @@ const Contact: React.FC = () => {
             <br /> We will get back to you fast.
           </p>
         </div>
-        <div className="md:w-1/2 w-full md:p-0 p-6">
+        <div className="lg:w-1/2 md:w-2/3 w-full md:p-0 p-6">
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label htmlFor="name" className="text-sm mt-4 text-[#787878]">

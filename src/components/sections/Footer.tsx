@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
     };
 
   return (
-    <div className="bg-black w-full py-12 h-[50vh]">
+    <div className="bg-black w-full py-12 lg:py-8 h-[50vh]">
       <Container className="text-white flex-col">
         <div>
           <h2 className="text-xl">Devcook</h2>

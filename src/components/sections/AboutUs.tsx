@@ -52,7 +52,7 @@ const teamMembers = [
 const AboutUs: React.FC = () => {
   return (
     <div className="w-full bg-white py-20">
-      <Container className="flex-col md:px-0 px-4 text-black items-start">
+      <Container className="flex-col lg:px-0 md:px-4 px-4 text-black items-start">
         <div className="flex flex-col md:flex-row w-full mb-12">
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
             <FlexibleBadge icon={Users} text="About us" />
@@ -79,7 +79,7 @@ const AboutUs: React.FC = () => {
           </div>
         </div>
       </Container>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:px-36 px-4 mt-20 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:px-36 lg:px-80 px-4 mt-20 gap-8">
         {teamMembers.map((member, index) => (
           <TeamMember key={index} {...member} />
         ))}

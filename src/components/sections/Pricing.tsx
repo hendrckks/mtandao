@@ -173,7 +173,7 @@ export default function Pricing() {
 
   return (
     <div className="bg-gradient-to-r from-[#f2f2f2] to-white">
-      <Container className="flex-col md:px-0 px-4">
+      <Container className="flex-col lg:px-0 md:px-4 px-4">
         <div className="py-12 flex flex-col md:items-center items-start w-full">
           <div className="bg-black flex w-fit text-sm mb-6 items-center justify-center gap-2 rounded-full">
             <FlexibleBadge text="Pricing" />
@@ -197,7 +197,7 @@ export default function Pricing() {
             </p>
           </div>
           <PriceToggle isQuarterly={isQuarterly} onToggle={togglePricing} />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-4 lg:gap-8">
             {pricingPlans.map((plan, index) => (
               <PricingCard
                 key={index}

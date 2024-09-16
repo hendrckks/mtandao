@@ -76,7 +76,7 @@ const servicesData = [
 const Services: React.FC = () => {
   return (
     <div className="min-h-[100vh] w-full bg-white">
-      <Container className="flex-col items-start  md:px-0 px-4 py-48 text-black">
+      <Container className="flex-col items-start md:px-4 lg:px-0 px-4 py-48 text-black">
         <div className="mb-5">
           <FlexibleBadge
             text="Our Services"
