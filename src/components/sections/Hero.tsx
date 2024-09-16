@@ -9,7 +9,7 @@ export default function Hero() {
     <div className="bg-white w-full">
       <Container className="mb-10 md:min-h-[700px] md:min-w-[1300px] h-fit md:px-2 px-4 w-full">
         <div className="flex flex-col md:mt-10 mt-0 md:flex-row w-full">
-          <div className="md:py-24 py-14 w-full text-black md:w-1/2">
+          <div className="md:py-24 py-16 w-full text-black md:w-1/2">
             <div>
               <h2 className="text-5xl md:text-7xl font-semibold">
                 A Web Development <br className="hidden md:inline" /> Agency

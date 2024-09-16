@@ -49,15 +49,15 @@ const MobileNavbar: React.FC = () => {
       <Container className="px-4">
         <div
           onClick={toggleNavbar}
-          className="flex justify-between bg-[#f2f2f2] rounded-md w-full items-center shadow-sm p-4"
+          className="flex justify-between border border-[#dcddec] bg-[#f2f2f2] rounded-lg w-full items-center p-5"
         >
-          <div className="text-xl font-semibold">Devcook</div>
+          <div className="text-2xl font-semibold">Devcook</div>
           <button className="p-2">
             <motion.div
               animate={{ rotate: isOpen ? 180 : 0 }}
               transition={{ duration: 0.3 }}
             >
-              <ArrowDownDashedSquareSolid className="w-6 h-6" />
+              <ArrowDownDashedSquareSolid className="w-7 h-7" />
             </motion.div>
           </button>
         </div>
