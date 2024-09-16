@@ -109,9 +109,9 @@ const pricingPlans: Array<
       { text: 'Pause or cancel anytime.', included: true },
     ],
     monthlylink:
-      'https://devcook.myshopify.com/cart/45959777714333:1?channel=buy_button',
+      'https://f2d5d0-7d.myshopify.com/cart/48653450805441:1?channel=buy_button',
     quaterlylink:
-      'https://devcook.myshopify.com/cart/45959931232413:1?channel=buy_button',
+      'https://f2d5d0-7d.myshopify.com/cart/48653460504769:1?channel=buy_button',
   },
   {
     title: 'Prix fixe',
@@ -127,9 +127,9 @@ const pricingPlans: Array<
       { text: 'Slack communication.', included: true },
     ],
     monthlylink:
-      'https://devcook.myshopify.com/cart/45959842332829:1?channel=buy_button',
+      'https://f2d5d0-7d.myshopify.com/cart/48653451657409:1?channel=buy_button',
     quaterlylink:
-      'https://33a666-0c.myshopify.com/cart/45959948501149:1?channel=buy_button',
+      'https://f2d5d0-7d.myshopify.com/cart/48653453918401:1?channel=buy_button',
   },
 ];
 
