@@ -53,7 +53,7 @@ const servicesData = [
   {
     title: 'E-commerce Solutions',
     description:
-      'We create powerful e-commerce platforms to help you sell products and services online effectively.',
+      'We build powerful e-commerce platforms to help you sell products and services online effectively.',
     features: [
       'Custom E-commerce websites',
       'Shopping cart integration',
