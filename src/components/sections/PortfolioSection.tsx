@@ -30,7 +30,7 @@ const PortfolioSection: React.FC = () => {
       name: 'Supply',
       imageUrl: '/portfolio/supply.family.jpg',
       description:
-        'Turned supply.family from a boring business name into a website that will make your family gatherings less, well, supply-focused. (We cannot promise peace, but a website this good has gotta help, right?)',
+        'Turned supply from a boring business into a cool minimalistic company through their website. Now all their clients will have an exquisite browsing experience when going through an endless cycle of indecisiveness, because of how good supply.family mockups are; they wont know which design to chose because they are all cool.(We cannot promise peace, but a website this good has gotta help, right?)',
       year: '2023-2024',
       workstreams: [
         'UX/UI Design',
