@@ -3,7 +3,7 @@ import Container from '../Container';
 import { motion } from 'framer-motion';
 import FlexibleBadge from '../TitleBadge';
 // import { Wrench } from '../icons/Wrench';
-import { ArrowCursor2 } from '../icons/Navigater';
+// import { ArrowCursor2 } from '../icons/Navigater';
 // import { ArrowRoundRight } from '../icons/ArrowRoundRight';
 // import { Rocket } from '../icons/Rocket';
 // import { GraphArrowIncreaseSolid } from '../icons/KickStater';
@@ -41,7 +41,7 @@ const topServices = [
 ];
 
 const bottomServices = [
-  { text: 'Brand identity', icon: ArrowCursor2 },
+  { text: 'Brand identity', icon: BrandStocktwits },
   { text: 'Api intergrations', icon: Api },
   { text: 'Copy writing', icon: Writing },
   // { text: 'Cybersecurity', icon: Wrench },
@@ -50,7 +50,7 @@ const bottomServices = [
   { text: 'Web analytics', icon: GraphBar },
   // { text: 'Cybersecurity', icon: Wrench },
   { text: 'Automations intergrations', icon: Automation4 },
-  { text: 'Brand identity', icon: ArrowCursor2 },
+  // { text: 'Brand identity', icon: ArrowCursor2 },
 ];
 
 const ServicesSection: React.FC = () => {
