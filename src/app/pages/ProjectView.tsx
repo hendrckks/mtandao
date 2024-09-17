@@ -36,7 +36,7 @@ const ProjectView: React.FC<ProjectViewProps> = ({ project, onClose }) => {
       animate={{ y: 0 }}
       exit={{ y: '100%' }}
       transition={{ type: 'spring', damping: 20, stiffness: 100 }}
-      className="fixed inset-x-0 bottom-0 lg:h-[78vh] h-[99vh] bg-[#fafafa] shadow-lg text-[#131211] rounded-t-3xl overflow-y-auto z-50"
+      className="fixed inset-x-0 bottom-0 lg:h-[78vh] h-[95vh] bg-[#fafafa] shadow-lg text-[#131211] rounded-t-3xl overflow-y-auto z-50"
       onClick={(e) => e.stopPropagation()}
     >
       <Container className="container mx-auto flex flex-col text-[#131211] items-start lg:py-20 lg:px-20 p-2 py-10">

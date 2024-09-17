@@ -21,7 +21,7 @@ const EnhancedPulsingLiveButton = () => {
           scale: [1, 0.9, 1],
         }}
         transition={{
-          duration: 2,
+          duration: 0.8,
           repeat: Infinity,
           ease: 'easeInOut',
         }}
