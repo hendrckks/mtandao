@@ -54,8 +54,8 @@ const PortfolioSection: React.FC = () => {
       year: '2023',
       workstreams: [
         'UI/UX Development',
-        'Performance optimization',
-        // 'API Integration',
+        'Performance Optimization',
+        'API Integration',
       ],
       currentRelationship: 'ongoing',
       images: [
@@ -76,8 +76,8 @@ const PortfolioSection: React.FC = () => {
         'Landing Page',
         'Design',
         'Copy Writing',
-        'performance optimization',
-        'API integration',
+        'performance Optimization',
+        'API Integration',
       ],
       currentRelationship: '8 months',
       images: [
