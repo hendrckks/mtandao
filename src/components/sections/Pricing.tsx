@@ -179,8 +179,10 @@ export default function Pricing() {
             <FlexibleBadge text="Pricing" />
           </div>
           <div className="text-black mt-4 md:text-center mb-8">
-            <p className="text-4xl font-semibold">Transactions made simple.</p>
-            <p className="text-black text-3xl mt-6">
+            <p className="lg:text-6xl text-4xl font-semibold">
+              Transactions made simple.
+            </p>
+            <p className="text-black text-4xl mt-6">
               No contracts. No headaches.
               <br />
               <span className="text-[#b4b3b1]">On demand, full-service</span>

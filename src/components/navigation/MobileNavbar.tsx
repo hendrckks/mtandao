@@ -19,7 +19,8 @@ const MobileNavbar: React.FC = () => {
   };
 
   const handleSectionClick =
-    (section: 'pricing' | 'testimonials' | 'about' | 'faq') => () => {
+    (section: 'pricing' | 'testimonials' | 'about' | 'faq' | 'portfolio') =>
+    () => {
       if (location.pathname !== '/') {
         navigate('/', { state: { fromSection: section } });
       } else {
@@ -70,7 +71,7 @@ const MobileNavbar: React.FC = () => {
               animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="bg-[#f2f2f2] mt-[-2px] w-full overflow-hidden rounded-b-md shadow-md"
+              className="bg-[#f2f2f2] mt-[-6px] border border-[#dcddec] border-t-transparent w-full overflow-hidden rounded-b-md shadow-md"
             >
               <div className="py-4 text-base px-6 space-y-4">
                 <Link to="/" className="block" onClick={() => setIsOpen(false)}>
@@ -91,13 +92,13 @@ const MobileNavbar: React.FC = () => {
                 >
                   Services
                 </Link>
-                <Link
+                {/* <Link
                   to="/portfolio"
                   className="block"
                   onClick={() => setIsOpen(false)}
                 >
                   Portfolio
-                </Link>
+                </Link> */}
                 {!isHomePage && (
                   <button
                     className="block w-full text-left"
@@ -129,6 +130,14 @@ const MobileNavbar: React.FC = () => {
                     onClick={handleSectionClick('testimonials')}
                   >
                     See Testimonials
+                  </button>
+                )}
+                {!isHomePage && (
+                  <button
+                    className="w-full py-2 bg-black text-white rounded-lg"
+                    onClick={handleSectionClick('portfolio')}
+                  >
+                    Our Work
                   </button>
                 )}
                 {!isHomePage && (

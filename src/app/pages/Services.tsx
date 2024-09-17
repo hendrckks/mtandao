@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Container from '../../components/Container';
 import FlexibleBadge from '../../components/TitleBadge';
 import ServiceCard from '../../components/ServicesCard';
 import { ArrowrRight } from '../../components/icons/ArrowRight';
+import { NavbarContext } from '../../components/navigation/NavbarContext';
 
 const servicesData = [
   {
@@ -74,6 +75,11 @@ const servicesData = [
 ];
 
 const Services: React.FC = () => {
+  const { scrollToSection } = useContext(NavbarContext);
+
+  const handleViewProjectsClick = () => {
+    scrollToSection('portfolio');
+  };
   return (
     <div className="min-h-[100vh] w-full bg-white">
       <Container className="flex-col items-start md:px-4 lg:px-0 px-4 py-48 text-black">
@@ -84,13 +90,16 @@ const Services: React.FC = () => {
             textClassName="text-[#787878] text-sm"
             className="bg-[#f2f2f2]"
           />
-          <h2 className="text-5xl font-semibold mt-4">What we do</h2>
+          <h2 className="text-5xl lg:text-6xl font-semibold mt-4">
+            What we do
+          </h2>
           <p className="mt-4">
             Our lean team specializes in Web design and <br />
             development services.
           </p>
           <div className="flex items-center cursor-pointer">
             <FlexibleBadge
+              onClick={handleViewProjectsClick}
               text="View Projects"
               iconClassName="text-base text-black"
               icon={ArrowrRight}

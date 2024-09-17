@@ -67,7 +67,7 @@ const ServicesSection: React.FC = () => {
           iconClassName="text-lg"
           text="Our services"
         />
-        <h2 className="md:text-5xl text-4xl font-semibold mt-8 mb-2">
+        <h2 className="lg:text-6xl text-4xl font-semibold mt-8 mb-2">
           Well, we cook a lot.
         </h2>
         <p className="text-base text-center md:w-full w-3/4 mt-4">

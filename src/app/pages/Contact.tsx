@@ -110,7 +110,9 @@ const Contact: React.FC = () => {
             textClassName="text-[#787878] text-sm"
             className="bg-[#f2f2f2]"
           />
-          <h2 className="text-5xl font-semibold mt-4">Talk to us</h2>
+          <h2 className="text-5xl lg:text-6xl font-semibold mt-4">
+            Talk to us
+          </h2>
           <p className="mt-4">
             Do you have questions? Contact us and let us know.
             <br /> We will get back to you fast.

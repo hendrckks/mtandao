@@ -2,13 +2,15 @@ import React, { useContext } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import Container from '../Container';
 import Home2 from '../icons/Home2';
-import { MacCommand } from '../icons/Services1';
+// import { MacCommand } from '../icons/Services1';
 import { Phone } from '../icons/Contact';
 import { IbmCloudProjects } from '../icons/Portfolio';
 import TooltipLink from './TooltipLink';
 import CtaButton from '../CtaButton';
 import { NavbarContext } from './NavbarContext';
 import MobileNavbar from './MobileNavbar';
+import { Stack } from '../icons/Stack';
+// import { MacCommand } from '../icons/Services1';
 
 const Navbar: React.FC = () => {
   const { scrollToSection } = useContext(NavbarContext);
@@ -16,6 +18,9 @@ const Navbar: React.FC = () => {
 
   const handlePricingClick = () => {
     scrollToSection('pricing');
+  };
+  const handlePortfolioClick = () => {
+    scrollToSection('portfolio');
   };
 
   if (isMobile) {
@@ -29,12 +34,19 @@ const Navbar: React.FC = () => {
           <div className="text-xl p-4 text-black">Devcook</div>
           <div className="flex bg-black rounded-full p-[6px] items-center">
             <TooltipLink to="/" icon={Home2} tooltip="Home" />
-            <TooltipLink to="/services" icon={MacCommand} tooltip="Services" />
             <TooltipLink
-              to="/portfolio"
+              to="/services"
               icon={IbmCloudProjects}
-              tooltip="Portfolio"
+              tooltip="Services"
             />
+            <div onClick={handlePortfolioClick}>
+              <TooltipLink
+                to="/"
+                icon={Stack}
+                tooltip="Portfolio"
+                noActiveBackground={true}
+              />
+            </div>
             <TooltipLink to="/contact-us" icon={Phone} tooltip="Contact" />
           </div>
           <CtaButton className="mr-[12px]" onClick={handlePricingClick}>

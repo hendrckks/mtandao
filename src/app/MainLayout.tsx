@@ -14,7 +14,7 @@ const PageTransition: React.FC<{ children: React.ReactNode }> = ({
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        key={location.pathname}
+        key={location.pathname.split('/')[1]} // Only animate on main route changes
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
@@ -32,13 +32,16 @@ const MainLayout: React.FC = () => {
       | 'pricing'
       | 'testimonials'
       | 'about'
-      | 'faq']: React.RefObject<HTMLDivElement> | null;
+      | 'faq'
+      | 'portfolio']: React.RefObject<HTMLDivElement> | null;
   }>({
     pricing: null,
     testimonials: null,
     about: null,
     faq: null,
+    portfolio: null,
   });
+
   const [shouldPerformSecondaryClick, setShouldPerformSecondaryClick] =
     useState(false);
   const [targetSection, setTargetSection] = useState<
@@ -49,7 +52,7 @@ const MainLayout: React.FC = () => {
 
   const updateSectionRef = useCallback(
     (
-      section: 'pricing' | 'testimonials' | 'about' | 'faq',
+      section: 'pricing' | 'testimonials' | 'about' | 'faq' | 'portfolio',
       ref: React.RefObject<HTMLDivElement> | null
     ) => {
       setSectionRefs((prev) => ({ ...prev, [section]: ref }));
@@ -58,7 +61,7 @@ const MainLayout: React.FC = () => {
   );
 
   const scrollToSection = useCallback(
-    (section: 'pricing' | 'testimonials' | 'about' | 'faq') => {
+    (section: 'pricing' | 'testimonials' | 'about' | 'faq' | 'portfolio') => {
       if (location.pathname !== '/') {
         navigate('/', { state: { fromSection: section } });
       } else if (sectionRefs[section] && sectionRefs[section]?.current) {
@@ -72,6 +75,18 @@ const MainLayout: React.FC = () => {
     },
     [location.pathname, navigate, sectionRefs]
   );
+  useEffect(() => {
+    const handlePopState = () => {
+      // Force a re-render when the user navigates with browser buttons
+      setShouldPerformSecondaryClick((prev) => !prev);
+    };
+
+    window.addEventListener('popstate', handlePopState);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, []);
 
   useEffect(() => {
     if (

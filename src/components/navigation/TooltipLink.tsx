@@ -7,6 +7,7 @@ const TooltipLink: React.FC<TooltipLinkProps> = ({
   to,
   icon: Icon,
   tooltip,
+  noActiveBackground = false,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const location = useLocation();
@@ -17,7 +18,9 @@ const TooltipLink: React.FC<TooltipLinkProps> = ({
       <Link
         to={to}
         className={`block p-3 rounded-full transition-colors duration-200 ${
-          isActive ? 'bg-[#b8ff45]' : 'bg-[#2e2e2e] hover:bg-[#3e3e3e]'
+          isActive && !noActiveBackground
+            ? 'bg-[#b8ff45]'
+            : 'bg-[#2e2e2e] hover:bg-[#3e3e3e]'
         }`}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -25,7 +28,7 @@ const TooltipLink: React.FC<TooltipLinkProps> = ({
         <div className="h-8 w-8 flex justify-center items-center">
           <Icon
             className={`text-xl ${
-              isActive ? 'text-black' : 'text-[#f2f2f2]'
+              isActive && !noActiveBackground ? 'text-black' : 'text-[#f2f2f2]'
             } transition-colors`}
           />
         </div>
