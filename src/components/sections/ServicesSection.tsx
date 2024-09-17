@@ -21,6 +21,7 @@ import { Api } from '../icons/Api';
 import { Hostinger } from '../icons/Hosting';
 import { GraphBar } from '../icons/Graph';
 import { Automation4 } from '../icons/Automations';
+import { Writing } from '../icons/Copywriting';
 
 const topServices = [
   // { text: 'Webflow experts', icon: Rocket },
@@ -42,7 +43,7 @@ const topServices = [
 const bottomServices = [
   { text: 'Brand identity', icon: ArrowCursor2 },
   { text: 'Api intergrations', icon: Api },
-  // { text: 'Problem solving', icon: MacCommand },
+  { text: 'Copy writing', icon: Writing },
   // { text: 'Cybersecurity', icon: Wrench },
   { text: 'Domain and Hosting', icon: Hostinger },
   { text: 'Api intergrations', icon: Api },
