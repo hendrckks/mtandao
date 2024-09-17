@@ -50,7 +50,7 @@ const PortfolioSection: React.FC = () => {
       name: 'Toolpro',
       imageUrl: '/portfolio/tools.png',
       description:
-        'Development of a secure and user-friendly mobile banking application for a major financial institution.',
+        'Transformed Tool Lab from a jumbled mess of tools into a sleek, user-friendly platform that is as easy on the eyes as it is on the wallet. Our team made sure every entrepreneur could find the perfect tool for their business without getting lost in a maze of jargon. From the moment they land on the page, they are guided smoothly through a world of productivity-boosting solutions.',
       year: '2023',
       workstreams: [
         'UI/UX Development',
