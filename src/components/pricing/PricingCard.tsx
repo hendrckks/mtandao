@@ -48,10 +48,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
       <p className="text-sm py-6">{description}</p>
       <ul className="flex-grow mb-2">
         {features.map((feature, index) => (
-          <li
-            key={index}
-            className="flex md:text-base text-sm items-center py-2"
-          >
+          <li key={index} className="flex text-sm items-center py-2">
             <span className="mr-4">
               {feature.included ? (
                 <Ticktick className="text-black w-4 h-4" />
