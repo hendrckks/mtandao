@@ -42,11 +42,11 @@ const ProjectView: React.FC<ProjectViewProps> = ({ project, onClose }) => {
       <Container className="container mx-auto flex flex-col text-[#131211] items-start lg:py-20 lg:px-20 p-2 py-10">
         <button
           onClick={onClose}
-          className="absolute lg:top-8 top-12 right-10 text-gray-500 hover:text-gray-700"
+          className="absolute lg:top-8 top-24 right-6 lg:right-10 text-gray-500 hover:text-gray-700"
         >
           <X className="text-black text-2xl" />
         </button>
-        <h2 className="lg:text-[40px] text-3xl font-bold mb-10">
+        <h2 className="lg:text-[40px] lg:mt-0 mt-12 text-3xl font-bold mb-10">
           {project.name}
         </h2>
         <p className="lg:mb-20 mb-10 lg:text-lg text-sm lg:w-2/3 w-full text-[#9b9997]">
