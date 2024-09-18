@@ -1,5 +1,6 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { Link } from 'react-router-dom';
+import emailjs from 'emailjs-com';
 import Container from '../../components/Container';
 import { Calendly } from '../../components/icons/Calendly';
 import FlexibleBadge from '../../components/TitleBadge';
@@ -67,25 +68,18 @@ const Contact: React.FC = () => {
 
     if (validateForm()) {
       try {
-        const response = await fetch(
-          'https://formsubmit.co/ajax/devcookagency@gmail.com',
+        const result = await emailjs.send(
+          'service_49knah8',
+          'template_s2du2ur',
           {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              Accept: 'application/json',
-            },
-            body: JSON.stringify({
-              name: formData.name,
-              email: formData.email,
-              message: formData.message,
-            }),
-          }
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+          },
+          'zY4U1574ljQMp_KOU'
         );
 
-        const result = await response.json();
-
-        if (result.success === 'true') {
+        if (result.text === 'OK') {
           setSubmitResult('Message sent successfully!');
           setFormData({ name: '', email: '', message: '' });
         } else {
