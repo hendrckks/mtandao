@@ -46,8 +46,8 @@ const PortfolioSection: React.FC = () => {
       Livelink: 'https://supply.family/',
     },
     {
-      id: 'toolpro',
-      name: 'Toolpro',
+      id: 'toollab',
+      name: 'Toollab',
       imageUrl: '/portfolio/tools.png',
       description:
         'Transformed Tool Lab from a jumbled mess of tools into a sleek, user-friendly platform that is as easy on the eyes as it is on the wallet. Our team made sure every entrepreneur could find the perfect tool for their business without getting lost in a maze of jargon. From the moment they land on the page, they are guided smoothly through a world of productivity-boosting solutions.',
