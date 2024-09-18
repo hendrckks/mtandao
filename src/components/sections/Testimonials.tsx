@@ -39,18 +39,18 @@ const scrollableTestimonials: Testimonial[] = [
     imageUrl: '/testimonials/testimonial3.webp',
   },
   {
-    author: 'Isabella',
+    author: 'Henry',
     role: 'Marketing lead',
     quote:
       "We're super impressed with how they handled our project. It went from concept to completion smoothly, and the end result is exactly what we were aiming for.",
-    imageUrl: '/testimonials/testimonial4.webp',
+    imageUrl: '/testimonials/testimonial2.webp',
   },
   {
-    author: 'Tariq',
+    author: 'Dan',
     role: 'e-Commerce',
     quote:
       "I loved working with Devcook! They brought our ideas to life in a way that feels authentic to our brand. Plus, they're really fun and easy to collaborate with—zero stress, all good vibes.",
-    imageUrl: '/testimonials/testimonial5.webp',
+    imageUrl: '/testimonials/testimonial3.webp',
   },
   // {
   //   author: 'Sophie',
