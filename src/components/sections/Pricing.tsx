@@ -96,7 +96,7 @@ const pricingPlans: Array<
   Omit<PricingCardProps, 'price' | 'isQuarterly'> & { price: number }
 > = [
   {
-    title: 'Repas standard',
+    title: 'Repras standard',
     price: 2595,
     description: 'One request at a time. Pause or cancel anytime.',
     icon: <GraphArrowIncreaseSolid className="text-black" />,
