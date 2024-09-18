@@ -130,6 +130,12 @@ const ProjectView: React.FC<ProjectViewProps> = ({ project, onClose }) => {
             </button>
           </div>
         </Container>
+        <div
+          onClick={onClose}
+          className="text-gray-500 items-center w-full flex justify-center py-8 hover:text-gray-700"
+        >
+          <X className="text-black text-3xl cursor-pointer" />
+        </div>
       </Container>
     </motion.div>
   );
