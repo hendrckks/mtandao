@@ -18,12 +18,12 @@ const staticTestimonials: Testimonial[] = [
     author: 'Luis',
     role: 'e-Commerce',
     quote:
-      "The Devcook crew made everything effortless. They listened to what we needed and delivered a site that's beautiful and user-friendly. These folks really know their stuff!",
+      "The Devcook crew made everything effortless. They listened to what supply needed as a brand and delivered a site that's beautiful and user-friendly. These folks really know their stuff!",
     imageUrl: '/testimonials/testimonial5.webp',
   },
   {
     author: 'Aisha',
-    role: 'Non-profit creative director',
+    role: 'Finance',
     quote:
       "Devcook totally got our vision. They took some scattered ideas and turned them into a smooth and intuitive website. The process was super chill and we're beyond happy with the final look!",
     imageUrl: '/testimonials/testimonial4.webp',
@@ -52,20 +52,20 @@ const scrollableTestimonials: Testimonial[] = [
       "I loved working with Devcook! They brought our ideas to life in a way that feels authentic to our brand. Plus, they're really fun and easy to collaborate with—zero stress, all good vibes.",
     imageUrl: '/testimonials/testimonial5.webp',
   },
-  {
-    author: 'Sophie',
-    role: 'Tech Startup Founder',
-    quote:
-      "Devcook's attention to detail is unmatched. They didn't just build a website; they created a digital experience that truly represents our brand. Highly recommended!",
-    imageUrl: '/testimonials/testimonial6.webp',
-  },
-  {
-    author: 'Marcus',
-    role: 'UX Designer',
-    quote:
-      'As a designer myself, I have high standards. Devcook not only met them but exceeded them. Their work is a perfect blend of aesthetics and functionality.',
-    imageUrl: '/testimonials/testimonial7.webp',
-  },
+  // {
+  //   author: 'Sophie',
+  //   role: 'Tech Startup Founder',
+  //   quote:
+  //     "Devcook's attention to detail is unmatched. They didn't just build a website; they created a digital experience that truly represents our brand. Highly recommended!",
+  //   imageUrl: '/testimonials/testimonial6.webp',
+  // },
+  // {
+  //   author: 'Marcus',
+  //   role: 'UX Designer',
+  //   quote:
+  //     'As a designer myself, I have high standards. Devcook not only met them but exceeded them. Their work is a perfect blend of aesthetics and functionality.',
+  //   imageUrl: '/testimonials/testimonial7.webp',
+  // },
 ];
 
 const Testimonials: React.FC = () => {

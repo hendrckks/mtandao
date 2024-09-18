@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
           />
         </div>
         <p className="text-sm text-[#b4b3b1]">
-          © 2024 Devbook LLC. All rights reserved.
+          © 2024 Devcook LLC. All rights reserved.
         </p>
       </Container>
     </div>
