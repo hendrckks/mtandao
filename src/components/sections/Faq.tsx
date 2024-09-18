@@ -15,7 +15,7 @@ const Faq: React.FC = () => {
             text="FAQs"
             icon={Comments}
           />
-          <h2 className="md:text-5xl text-4xl mt-6 font-medium text-black">
+          <h2 className="md:text-4xl text-3xl mt-6 font-medium text-black">
             Got any questions?
             <br /> <span className="text-[#b4b3b1]">We've got answers.</span>
           </h2>

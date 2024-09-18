@@ -33,16 +33,16 @@ const TestimonialSnippet: React.FC<TestimonialSnippetProps> = ({
             className="w-14 h-14 rounded-full object-cover mr-4"
             alt="testimonial"
           />
-          <p className="md:text-[20px] mt-4 text-lg">
+          <p className="lg:text-[20px] mt-4 text-base">
             "We're stoked with the work from Devcook. Very clean work"
           </p>
-          <div className="flex gap-2 mt-2 text-[14px] text-sm">
+          <div className="flex gap-2 mt-2  text-sm">
             <p className="">Amy</p>
             <span className="text-[#b8ff45]">-</span>
             <p>Biscotto haven founder</p>
           </div>
         </div>
-        <div className="text- mt-4 gap-4 flex items-center">
+        <div className="text- mt-4 gap-4 lg:text-base text-sm flex items-center">
           See all testimonials
           <button
             className="ml-2 hover:text-[#b8ff45] cursor-pointer"

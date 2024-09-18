@@ -20,7 +20,7 @@ const FAQItem: React.FC<FAQItemProps> = ({
       className="flex justify-between items-center w-full py-4 text-left"
       onClick={onClick}
     >
-      <span className="text-lg font-medium">{question}</span>
+      <span className="text-base font-medium">{question}</span>
       <motion.div
         animate={{ rotate: isOpen ? 0 : 45 }}
         transition={{ duration: 0.3 }}

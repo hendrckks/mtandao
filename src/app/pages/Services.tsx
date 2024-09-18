@@ -90,10 +90,10 @@ const Services: React.FC = () => {
             textClassName="text-[#787878] text-sm"
             className="bg-[#f2f2f2]"
           />
-          <h2 className="text-5xl lg:text-6xl font-semibold mt-4">
+          <h2 className="text-3xl lg:text-4xl font-semibold mt-4">
             What we do
           </h2>
-          <p className="mt-4">
+          <p className="mt-4 text-sm">
             Our lean team specializes in Web design and <br />
             development services.
           </p>

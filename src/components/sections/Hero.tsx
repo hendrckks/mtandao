@@ -11,13 +11,12 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row gap-4 w-full">
           <div className="py-16 lg:py-24 w-full text-black lg:w-1/2">
             <div>
-              <h2 className="text-5xl md:text-7xl lg:text-6xl  font-semibold">
-                Premium web <br className="hidden lg:inline" />
-                designs and
-                <br className="hidden lg:inline" /> development to grow your
-                business
+              <h2 className="text-4xl md:text-6xl lg:text-5xl  font-semibold">
+                Premium web designs <br className="hidden lg:inline" />
+                and development to
+                <br className="hidden lg:inline" /> grow your business
               </h2>
-              <p className="py-6 mt-[16px] font-normal text-base md:text-xl lg:text-xl">
+              <p className="py-6 mt-[16px] font-normal text-base lg:text-lg">
                 Devcook replaces unreliable freelancers and expensive
                 <br /> agencies for one flat monthly fee, with designs delivered
                 so fast that it will blow your mind.

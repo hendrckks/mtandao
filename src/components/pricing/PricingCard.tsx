@@ -37,9 +37,9 @@ const PricingCard: React.FC<PricingCardProps> = ({
         <div className="bg-[#b8ff45] h-12 w-12 flex items-center justify-center rounded-full mr-3">
           {icon}
         </div>
-        <h3 className="text-xl font-medium text-black">{title}</h3>
+        <h3 className="lg:text-xl text-lg font-medium text-black">{title}</h3>
       </div>
-      <p className="text-[42px] font-medium mt-4 flex items-center mb-2">
+      <p className="lg:text-[42px] text-4xl font-medium mt-4 flex items-center mb-2">
         $<span>{price}</span>/
         <span className="text-2xl font-semibold">
           {isQuarterly ? 'm' : 'm'}
@@ -76,7 +76,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
           </Link>
         </div>
       </a>
-      <p className="text-center text-sm text-[#7329e3] mt-4">
+      <p className="text-center lg:text-sm text-xs text-[#7329e3] mt-4">
         Powered by shopify
       </p>
     </div>

@@ -22,7 +22,7 @@ const FlexibleBadge: React.FC<FlexibleBadgeProps> = ({
   return (
     <div
       className={twMerge(
-        'bg-black flex w-fit text-sm items-center justify-center gap-2 rounded-full px-4 py-2',
+        'bg-[#1a1a1a] flex w-fit text-sm items-center justify-center gap-2 rounded-full px-4 py-2',
         className
       )}
       onClick={onClick}
