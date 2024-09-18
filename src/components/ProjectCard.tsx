@@ -25,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     <div className="flex flex-col mb-10">
       <div
         onClick={handleClick}
-        className="lg:w-[530px] w-full h-[630px] shadow-md rounded-2xl cursor-pointer overflow-hidden"
+        className="lg:w-[530px] w-full h-[630px] shadow-md rounded-3xl cursor-pointer overflow-hidden"
       >
         <img
           src={imageUrl}
