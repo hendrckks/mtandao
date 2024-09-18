@@ -52,7 +52,7 @@ const MobileNavbar: React.FC = () => {
           onClick={toggleNavbar}
           className="flex justify-between border border-[#dcddec] bg-[#f2f2f2] rounded-lg w-full items-center p-5"
         >
-          <div className="text-2xl font-semibold">Devcook</div>
+          <div className="text-xl font-semibold">Devcook.</div>
           <button className="p-2">
             <motion.div
               animate={{ rotate: isOpen ? 180 : 0 }}
