@@ -28,7 +28,7 @@ const PortfolioSection: React.FC = () => {
     {
       id: 'supply',
       name: 'Supply',
-      imageUrl: '/portfolio/supply.family.jpg',
+      imageUrl: '/portfolio/supply.family.webp',
       description:
         'Turned supply from a boring business into a cool minimalistic company through their website. Now all their clients will have an exquisite browsing experience when going through an endless cycle of indecisiveness, because of how good supply.family mockups are; they wont know which design to chose because they are all cool.(We cannot promise peace, but a website this good has gotta help, right?)',
       year: '2023-2024',
@@ -39,7 +39,7 @@ const PortfolioSection: React.FC = () => {
       ],
       currentRelationship: 'Ongoing',
       images: [
-        '/portfolio/supply.family.jpg',
+        '/portfolio/supply.family.webp',
         // '/portfolio/vb.jpg',
         // '/portfolio/rt.jpg',
       ],
