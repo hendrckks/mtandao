@@ -32,15 +32,21 @@ export default function Hero() {
             </div>
             <div className="mt-8 lg:mt-10">
               <Link to="https://cal.com/devcook/devcook-intro">
-                <CtaButton className="px-2 py-[7px] flex group items-center gap-4 w-2/3 lg:w-1/3 md:w-1/3 relative">
+                <CtaButton className="px-2 py-[7px] flex group items-center gap-4 w-2/4 lg:w-1/3 md:w-1/3 relative">
                   <div className="bg-[#b8ff45] z-30 relative w-1/2 py-2 flex items-center justify-center group-hover:w-full ease-out transition-all duration-300 px-2 rounded-full">
                     <ArrowRoundRight className="text-black group-hover:text-transparent font-bold text-[22px]" />
                     <Phone className="text-black hidden group-hover:block mr-6 font-extrabold text-[22px]" />
                   </div>
-                  <span className="text-white absolute left-[calc(48%+1rem)] group-hover:opacity-0 transition-opacity duration-300 font-medium">
+                  <span className="text-white absolute lg:left-[calc(48%+1rem)] md:left-[calc(46%+1rem)] left-[calc(44%+1rem)] group-hover:opacity-0 transition-opacity duration-300 font-medium">
                     Book a call
                   </span>
                 </CtaButton>
+                {/* <button
+                  // onClick={handleViewPlansClick}
+                  className="bg-[#131211] text-white border border-[#white] rounded-full lg:py-6 lg:px-8 py-3 px-6 font-medium tracking-tight whitespace-nowrap flex justify-center items-center transition-all duration-400 ease-in-out hover:bg-white hover:text-[#131211] hover:border-[#131211] hover:py-4 hover:px-7 hover:lg:py-6 hover:lg:px-9"
+                >
+                  Book a call
+                </button> */}
               </Link>
             </div>
           </div>
