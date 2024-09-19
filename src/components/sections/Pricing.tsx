@@ -182,7 +182,7 @@ export default function Pricing() {
             <p className="lg:text-4xl text-3xl font-semibold">
               Transactions made simple.
             </p>
-            <p className="text-black text-3xl mt-6">
+            <p className="text-black text-2xl mt-6">
               No contracts. No headaches.
               <br />
               <span className="text-[#b4b3b1]">On demand, full-service</span>
