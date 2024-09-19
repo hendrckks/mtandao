@@ -1,7 +1,4 @@
-//hide the scroll thingy
-//add the scroll to pricing and plans functionality
-
-import React, { useContext } from 'react';
+import React, { useContext, CSSProperties } from 'react';
 import { motion } from 'framer-motion';
 import Container from '../../components/Container';
 import { X } from '../../components/icons/X';
@@ -30,14 +27,37 @@ const ProjectView: React.FC<ProjectViewProps> = ({ project, onClose }) => {
     onClose();
     scrollToSection('pricing');
   };
+
+  const scrollableContainerStyle: CSSProperties = {
+    overflowY: 'scroll',
+    scrollbarWidth: 'none',
+    msOverflowStyle: 'none',
+  };
+
+  React.useEffect(() => {
+    // Apply WebKit scrollbar style
+    const style = document.createElement('style');
+    style.textContent = `
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    `;
+    document.head.append(style);
+
+    return () => {
+      document.head.removeChild(style);
+    };
+  }, []);
+
   return (
     <motion.div
       initial={{ y: '100%' }}
       animate={{ y: 0 }}
       exit={{ y: '100%' }}
       transition={{ type: 'spring', damping: 20, stiffness: 100 }}
-      className="fixed inset-x-0 bottom-0 lg:h-[78vh] h-[95vh] bg-[#fafafa] shadow-lg text-[#131211] rounded-t-3xl overflow-y-auto z-50"
+      className="fixed inset-x-0 bottom-0 lg:h-[78vh] h-[95vh] bg-[#fafafa] shadow-lg text-[#131211] rounded-t-3xl z-50 hide-scrollbar"
       onClick={(e) => e.stopPropagation()}
+      style={scrollableContainerStyle}
     >
       <Container className="container mx-auto flex flex-col text-[#131211] items-start lg:py-20 lg:px-20 p-2 py-10">
         <button
