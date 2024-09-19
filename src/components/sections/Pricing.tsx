@@ -122,9 +122,9 @@ const pricingPlans: Array<
       { text: 'Full stack design + development', included: true },
       { text: 'Unlimited Stock Photos.', included: true },
       { text: 'Updates every day.', included: true },
-      { text: 'Pause or cancel anytime.', included: true },
       { text: 'Unlimited iterations.', included: true },
       { text: 'Slack communication.', included: true },
+      { text: 'Pause or cancel anytime.', included: true },
     ],
     monthlylink:
       'https://f2d5d0-7d.myshopify.com/cart/48653451657409:1?channel=buy_button',

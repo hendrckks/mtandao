@@ -71,7 +71,7 @@ const ServicesSection: React.FC = () => {
           Well, we cook a lot.
         </h2>
         <p className="text-base text-center md:w-full w-3/4 mt-4">
-          Web design? web development? or a single landing page?
+          Brand identity? Web design? web development? or a single landing page?
           <br />
           We got you covered.
         </p>
