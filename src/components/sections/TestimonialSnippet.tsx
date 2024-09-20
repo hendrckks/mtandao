@@ -39,7 +39,7 @@ const TestimonialSnippet: React.FC<TestimonialSnippetProps> = ({
           <div className="flex gap-2 mt-2  text-sm">
             <p className="">Amy</p>
             <span className="text-[#b8ff45]">-</span>
-            <p>Biscotto haven founder</p>
+            <p>Biscotto haven Co-founder</p>
           </div>
         </div>
         <div className="text- mt-4 gap-4 lg:text-base text-sm flex items-center">
