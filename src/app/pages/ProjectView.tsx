@@ -75,8 +75,8 @@ const ProjectView: React.FC<ProjectViewProps> = ({ project, onClose }) => {
 
         {/* Workstreams Section */}
         <div className="w-full mb-10">
-          <h3 className="text-base mb-4 text-[#9b9997]">Workstreams</h3>
-          <ul className="flex flex-col lg:flex-row lg:flex-wrap">
+          <h3 className="lg:text-base mb-4 text-[#9b9997]">Workstreams</h3>
+          <ul className="flex flex-col lg:text-base text-sm lg:flex-row lg:flex-wrap">
             {project.workstreams.map((stream, index) => (
               <li
                 className="flex items-center mb-2 lg:mb-4 lg:mr-8"
@@ -90,7 +90,7 @@ const ProjectView: React.FC<ProjectViewProps> = ({ project, onClose }) => {
         </div>
 
         {/* Year Section */}
-        <div className="w-full mb-10">
+        <div className="w-full lg:text-base text-sm mb-10">
           <p className="text-[#9b9997] mb-2">Year</p>
           <p className="flex items-center">
             <span className="text-[#9b9997] mr-4">|</span>
@@ -99,7 +99,7 @@ const ProjectView: React.FC<ProjectViewProps> = ({ project, onClose }) => {
         </div>
 
         {/* Current Relationship Section */}
-        <div className="w-full mb-20">
+        <div className="w-full lg:text-base text-sm mb-20">
           <p className="text-[#9b9997] mb-2">Engagement</p>
           <p className="flex items-center">
             <span className="text-[#9b9997] mr-4">|</span>
