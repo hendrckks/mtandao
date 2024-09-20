@@ -75,7 +75,7 @@ const ProjectView: React.FC<ProjectViewProps> = ({ project, onClose }) => {
 
         {/* Workstreams Section */}
         <div className="w-full mb-10">
-          <h3 className="lg:text-base mb-4 text-[#9b9997]">Workstreams</h3>
+          <h3 className="text-base mb-4 text-[#9b9997]">Workstreams</h3>
           <ul className="flex flex-col lg:text-base text-sm lg:flex-row lg:flex-wrap">
             {project.workstreams.map((stream, index) => (
               <li
