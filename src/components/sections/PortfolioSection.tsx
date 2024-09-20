@@ -120,7 +120,7 @@ const PortfolioSection: React.FC = () => {
   return (
     <div className="bg-[#f0efef] min-h-[100vh] py-20 relative">
       <Container className="mt-5 flex flex-col  lg:px-0 px-2 gap-24">
-        <div className="text-[#131211] w-full lg:px-14 px-0">
+        <div className="text-[#131211] w-full mt-12  lg:px-14 md:px-20 px-0">
           <FlexibleBadge
             icon={Stack}
             text="Portfolio"
@@ -130,7 +130,7 @@ const PortfolioSection: React.FC = () => {
             See our latest projects
           </h2>
           <div className="flex-col gap-5">
-            <p className="lg:text-3xl text-2xl text-[#131211] py-4">
+            <p className="lg:text-3xl text-2xl text-[#131211] lg:mt-4">
               {/* Need a brand that’s so iconic, it’ll be etched into your
               customers’ minds before they even know it? We’re the experts. A
               website that’s so fast and user-friendly, it’ll make your
