@@ -62,20 +62,21 @@ const PricingCard: React.FC<PricingCardProps> = ({
           </li>
         ))}
       </ul>
-      <a href={subscriptionLink} className="flex-col text-center">
-        <button className="mt-4 bg-black w-full text-white text-sm py-2 px-4 rounded-lg transition-colors">
+      <div className="flex-col text-center">
+        <a
+          href={subscriptionLink}
+          className="block mt-4 bg-black w-full text-white text-sm py-2 px-4 rounded-lg transition-colors hover:bg-gray-800"
+        >
           Subscribe
-        </button>
+        </a>
         <div className="mt-2 text-sm">or</div>
-        <div className="flex-col ">
-          <Link
-            to="https://cal.com/samuel-tetenga/devcook-intro-call"
-            className="underline text-sm"
-          >
-            Book a call
-          </Link>
-        </div>
-      </a>
+        <Link
+          to="https://cal.com/samuel-tetenga/devcook-intro-call"
+          className="block mt-2 underline text-sm hover:text-gray-600"
+        >
+          Book a call
+        </Link>
+      </div>
       <p className="text-center lg:text-sm text-xs text-[#7329e3] mt-4">
         Powered by shopify
       </p>

@@ -16,40 +16,38 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    e.stopPropagation();
     console.log('ProjectCard clicked:', id);
     onProjectClick(id);
   };
 
   return (
-    <div className="flex flex-col mb-10">
-      <div
+    <article className="flex flex-col mb-10">
+      <a
+        href={`/project/${id}`}
         onClick={handleClick}
-        className="lg:w-[530px] w-full h-[630px] shadow-md rounded-3xl cursor-pointer overflow-hidden"
+        className="group no-underline"
+        aria-label={`View project: ${name}`}
       >
-        <img
-          src={imageUrl}
-          alt={name}
-          className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-        />
-      </div>
-      <div className="flex justify-between items-center text-base px-5 mt-5">
-        <div>
-          <p className="text-[#131211]">{name}</p>
+        <div className="lg:w-[530px] w-full h-[630px] shadow-md rounded-3xl overflow-hidden">
+          <img
+            src={imageUrl}
+            alt={`${name} project thumbnail`}
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+          />
         </div>
-        <div onClick={handleClick} className="flex items-center gap-2 group">
-          <button
-            onClick={handleClick}
-            className="text-[#9b9997] group-hover:text-[#131211] transition-colors duration-300"
-          >
-            View Project
-          </button>
-          <div className="text-[#9b9997] mb-1 text-lg font-semibold group-hover:text-[#131211]">
-            <ArrowUpRightBoxOutline />
+        <div className="flex justify-between items-center text-base px-5 mt-5">
+          <p className="text-[#131211]">{name}</p>
+          <div className="flex items-center gap-2">
+            <span className="text-[#9b9997] group-hover:text-[#131211] transition-colors duration-300">
+              View Project
+            </span>
+            <span className="text-[#9b9997] mb-1 text-lg font-semibold group-hover:text-[#131211]">
+              <ArrowUpRightBoxOutline />
+            </span>
           </div>
         </div>
-      </div>
-    </div>
+      </a>
+    </article>
   );
 };
 
