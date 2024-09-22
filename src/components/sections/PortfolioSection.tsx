@@ -48,7 +48,7 @@ const PortfolioSection: React.FC = () => {
     {
       id: 'nova',
       name: 'Nova speaker',
-      imageUrl: '.firebase/dev-cook/hosting/portfolio/nova5.jpg',
+      imageUrl: '/portfolio/nova5.jpg',
       description:
         'This was a branding concept we did for nova speakers. The concept was primarily focused on making the brand look and be a premium project. Their good quality product needed good branding that extensively made a stance in the stereo industry. We were going for a premium yet minimalistic path.',
       year: '2023-2024',
