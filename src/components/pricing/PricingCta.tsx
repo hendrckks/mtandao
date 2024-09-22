@@ -29,7 +29,7 @@ const AdditionalOption: React.FC<AdditionalOptionProps> = ({
   } mb-4 text-sm font-normal mt-6`;
   const buttonClasses = `mt-auto w-fit py-2 px-4 font-medium rounded-full text-sm transition-colors ${
     isBlackBackground
-      ? 'bg-white text-black hover:bg-gray-200'
+      ? 'bg-white text-[#131211] hover:bg-gray-200'
       : 'bg-black text-white hover:bg-gray-800'
   }`;
 

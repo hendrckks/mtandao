@@ -32,12 +32,14 @@ const PricingCard: React.FC<PricingCardProps> = ({
   const subscriptionLink = isQuarterly ? quaterlylink : monthlylink;
 
   return (
-    <div className="bg-white text-black rounded-3xl shadow-lg p-8 flex flex-col h-full">
+    <div className="bg-white text-[#131211] rounded-3xl shadow-lg p-8 flex flex-col h-full">
       <div className="items-center flex mb-4">
         <div className="bg-[#b8ff45] h-12 w-12 flex items-center justify-center rounded-full mr-3">
           {icon}
         </div>
-        <h3 className="lg:text-xl text-lg font-medium text-black">{title}</h3>
+        <h3 className="lg:text-xl text-lg font-medium text-[#131211]">
+          {title}
+        </h3>
       </div>
       <p className="lg:text-[42px] text-4xl font-medium mt-4 flex items-center mb-2">
         $<span>{price}</span>/
