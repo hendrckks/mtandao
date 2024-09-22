@@ -10,7 +10,7 @@ export default function Hero() {
     <div className="bg-white w-full">
       <Container className="mb-10 min-h-[700px] lg:min-w-[1300px] md:max-w-[1200px] h-fit px-4 md:px-24 lg:px-6 w-full">
         <div className="flex flex-col lg:flex-row gap-4 w-full">
-          <div className="py-16 lg:py-24 w-full text-black lg:w-1/2">
+          <div className="py-16 lg:py-24 w-full text-[#131211] lg:w-1/2">
             <div>
               {/* <div className="flex items-center space-x-4">
                 <EnhancedPulsingLiveButton />
@@ -41,8 +41,8 @@ export default function Hero() {
               <Link to="https://cal.com/devcook/devcook-intro">
                 <CtaButton className="px-2 py-[7px] flex group items-center gap-4 w-2/4 lg:w-1/3 md:w-1/3 relative">
                   <div className="bg-[#b8ff45] z-30 relative w-1/2 py-2 flex items-center justify-center group-hover:w-full ease-out transition-all duration-300 px-2 rounded-full">
-                    <ArrowRoundRight className="text-black group-hover:text-transparent font-bold text-[22px]" />
-                    <Phone className="text-black hidden group-hover:block mr-6 font-extrabold text-[22px]" />
+                    <ArrowRoundRight className="text-[#131211] group-hover:text-transparent font-bold text-[22px]" />
+                    <Phone className="text-[#131211] hidden group-hover:block mr-6 font-extrabold text-[22px]" />
                   </div>
                   <span className="text-white absolute lg:left-[calc(48%+1rem)] md:left-[calc(46%+1rem)] left-[calc(44%+1rem)] group-hover:opacity-0 transition-opacity duration-300 font-medium">
                     Book a call
@@ -57,7 +57,7 @@ export default function Hero() {
               </Link>
             </div>
           </div>
-          <div className="py-8 lg:py-24 w-full lg:w-1/2 text-black">
+          <div className="py-8 lg:py-24 w-full lg:w-1/2 text-[#131211]">
             <img
               src="/commerce/xd.jpg"
               alt="we do"

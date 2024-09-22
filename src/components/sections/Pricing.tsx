@@ -139,7 +139,7 @@ const additionalOptions: Array<AdditionalOptionProps> = [
     backgroundColor: 'black',
     icon: (
       <div className="bg-[#b8ff45] p-4 rounded-lg">
-        <ArrowCursor2 className="text-black w-6 h-6" />
+        <ArrowCursor2 className="text-[#131211] w-6 h-6" />
       </div>
     ),
     title: 'Redesign your Hero section.',
@@ -152,7 +152,7 @@ const additionalOptions: Array<AdditionalOptionProps> = [
     backgroundColor: 'white',
     icon: (
       <div className="bg-[#b8ff45] p-4 rounded-lg">
-        <ToggleOutline className="text-black w-6 h-6" />
+        <ToggleOutline className="text-[#131211] w-6 h-6" />
       </div>
     ),
     title: 'Custom Request?',
@@ -182,7 +182,7 @@ export default function Pricing() {
             <p className="lg:text-4xl text-3xl font-semibold">
               Transactions made simple.
             </p>
-            <p className="text-black text-2xl mt-6">
+            <p className="text-[#131211] text-2xl mt-6">
               No contracts. No headaches.
               <br />
               <span className="text-[#b4b3b1]">On demand, full-service</span>
@@ -192,7 +192,7 @@ export default function Pricing() {
               </span>
             </p>
           </div>
-          <div className="text-black text-base font-normal mb-12">
+          <div className="text-[#131211] text-base font-normal mb-12">
             <p className="py-4">
               We've developed different monthly pricing options for you and your
               business needs.

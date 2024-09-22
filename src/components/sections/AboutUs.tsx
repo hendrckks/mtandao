@@ -52,7 +52,7 @@ const teamMembers = [
 const AboutUs: React.FC = () => {
   return (
     <div className="w-full bg-white py-20">
-      <Container className="flex-col lg:px-0 md:px-4 px-4 text-black items-start">
+      <Container className="flex-col lg:px-0 md:px-4 px-4 text-[#131211] items-start">
         <div className="flex flex-col md:flex-row w-full mb-12">
           <div className="w-full md:w-1/2 mb-6 md:mb-0">
             <FlexibleBadge icon={Users} text="About us" />

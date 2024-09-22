@@ -18,10 +18,10 @@ const EnhancedPulsingLiveButton = () => {
       <motion.div
         className="relative z-10 h-3 w-3 bg-[#11a720] rounded-full"
         animate={{
-          scale: [1, 0.9, 1],
+          scale: [0.9, 1, 0.9],
         }}
         transition={{
-          duration: 1.2,
+          duration: 1.5,
           repeat: Infinity,
           ease: 'easeInOut',
         }}

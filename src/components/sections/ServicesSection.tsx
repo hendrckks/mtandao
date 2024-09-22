@@ -58,7 +58,7 @@ const ServicesSection: React.FC = () => {
   const bottomServicesWidth = bottomServices.length * 250;
 
   return (
-    <div className="w-full py-16 bg-white text-black">
+    <div className="w-full py-16 bg-white text-[#131211]">
       <Container className="flex-col items-center text-center w-full lg:min-w-[30vw]  relative">
         <div className="absolute top-0 left-0 h-full md:w-20 w-10 bg-gradient-to-r from-white to-transparent z-10"></div>
         <div className="absolute top-0 right-0 h-full md:w-20 w-10 bg-gradient-to-l from-white to-transparent z-10"></div>
