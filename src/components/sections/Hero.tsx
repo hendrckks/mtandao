@@ -3,6 +3,7 @@ import Container from '../Container';
 import CtaButton from '../CtaButton';
 import { ArrowRoundRight } from '../icons/ArrowRoundRight';
 import { Phone } from '../icons/Contact';
+// import EnhancedPulsingLiveButton from '../icons/Livedot';
 
 export default function Hero() {
   return (
@@ -11,6 +12,12 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row gap-4 w-full">
           <div className="py-16 lg:py-24 w-full text-black lg:w-1/2">
             <div>
+              {/* <div className="flex items-center space-x-4">
+                <EnhancedPulsingLiveButton />
+                <div className="text-white text-base">
+                  Now taking in new clients
+                </div>
+              </div> */}
               <h2 className="text-4xl md:text-6xl lg:text-5xl  font-semibold">
                 Premium designs <br className="hidden lg:inline" />
                 and web development to

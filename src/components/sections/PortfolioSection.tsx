@@ -46,6 +46,29 @@ const PortfolioSection: React.FC = () => {
       Livelink: 'https://supply.family/',
     },
     {
+      id: 'nova',
+      name: 'Nova speaker',
+      imageUrl: '/portfolio/-644813854.jpg',
+      description:
+        'This was a branding concept we did for nova speakers. The concept was primarily focused on making the brand look and be a premium project. Their good quality product needed good branding that extensively made a stance in the stereo industry. We were going for a premium yet minimalistic path.',
+      year: '2023-2024',
+      workstreams: [
+        'UX/UI Design',
+        'Front-end Development',
+        'Performance Optimization',
+      ],
+      currentRelationship: 'Ongoing',
+      images: [
+        // '/portfolio/supply.family.webp',
+        '/portfolio/-636292329.jpg',
+        '/portfolio/-827555175.jpg',
+        '/portfolio/-1235791517.jpg',
+        '/portfolio/-1502025211.jpg',
+        '/portfolio/939848549.jpg',
+      ],
+      Livelink: 'https://supply.family/',
+    },
+    {
       id: 'toollab',
       name: 'Toollab',
       imageUrl: '/portfolio/tools.png',
