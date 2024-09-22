@@ -48,7 +48,7 @@ const PortfolioSection: React.FC = () => {
     {
       id: 'nova',
       name: 'Nova speaker',
-      imageUrl: '/portfolio/nova2.jpg',
+      imageUrl: '.firebase/dev-cook/hosting/portfolio/nova5.jpg',
       description:
         'This was a branding concept we did for nova speakers. The concept was primarily focused on making the brand look and be a premium project. Their good quality product needed good branding that extensively made a stance in the stereo industry. We were going for a premium yet minimalistic path.',
       year: '2023-2024',
@@ -56,11 +56,11 @@ const PortfolioSection: React.FC = () => {
       currentRelationship: '2 months',
       images: [
         // '/portfolio/supply.family.webp',
-        '/portfolio/nova5.jpg',
-        '/portfolio/nova6.jpg',
-        '/portfolio/nova4.jpg',
-        '/portfolio/nova1.jpg',
-        '/portfolio/nova3.jpg',
+        '.firebase/dev-cook/hosting/portfolio/nova2.jpg',
+        '.firebase/dev-cook/hosting/portfolio/nova6.jpg',
+        '.firebase/dev-cook/hosting/portfolio/nova4.jpg',
+        '.firebase/dev-cook/hosting/portfolio/nova1.jpg',
+        '.firebase/dev-cook/hosting/portfolio/nova3.jpg',
       ],
       Livelink: '',
     },
