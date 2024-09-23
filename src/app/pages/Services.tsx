@@ -11,7 +11,7 @@ const servicesData = [
     description:
       ' Our team is commited to provide comprehensive suite of creative services aimed at helping businesses develop their brand identity and marketing materials.',
     features: [
-      'Corporate visuals(premium photography and videography',
+      'Corporate visuals(premium photography and videography)',
       'Premium logo designs',
       'Mockups',
       'Usage guidelines',
