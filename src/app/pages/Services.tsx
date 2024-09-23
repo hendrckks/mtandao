@@ -14,11 +14,11 @@ const servicesData = [
       'Corporate visuals(premium photography and videography)',
       'Premium logo designs',
       'Mockups',
-      'Usage guidelines',
+      'Brand guidelines & copy',
       'Typography',
       'Corporate communication',
       'Brand color schemes',
-      'Website design',
+      'landing page and Website design',
     ],
     images: [
       '/landing pages/nova4.jpg',
