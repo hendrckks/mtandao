@@ -4,7 +4,7 @@ import { Analytics, getAnalytics, logEvent } from 'firebase/analytics';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyBIEA3YKQe5VmgO01H-UlvSG6FhJuVjI5M',
-  authDomain: 'dev-cook.firebaseapp.com',
+  authDomain: 'dev-cook.web.app',
   projectId: 'dev-cook',
   storageBucket: 'dev-cook.appspot.com',
   messagingSenderId: '72819522086',
