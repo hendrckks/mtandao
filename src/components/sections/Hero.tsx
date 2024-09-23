@@ -25,13 +25,14 @@ export default function Hero() {
               </h2>
               <p className="py-6 mt-[16px] font-normal text-base lg:text-lg">
                 Devcook replaces unreliable freelancers and expensive
-                <br /> agencies for one flat monthly fee, with designs delivered
-                so fast that it will blow your mind.
+                <br className="hidden lg:inline" /> agencies for one flat
+                monthly fee, with designs delivered so fast that it will blow
+                your mind.
               </p>
               <p className="mt-[16px] font-normal text-sm md:text-base lg:text-[18px]">
                 Design and development subscriptions for everyone.
                 <br />
-                <br />{' '}
+                <br />
                 <span className="text-[#b4b3b1] text-sm">
                   Pause or cancel anytime.
                 </span>
