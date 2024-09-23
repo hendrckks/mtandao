@@ -7,14 +7,36 @@ import { NavbarContext } from '../../components/navigation/NavbarContext';
 
 const servicesData = [
   {
+    title: 'Brand development',
+    description:
+      ' Our team is commited to provide comprehensive suite of creative services aimed at helping businesses develop their brand identity and marketing materials.',
+    features: [
+      'Corporate visuals',
+      'Premium logo designs',
+      'Mockups',
+      'Usage guidelines',
+      'Typography',
+      'Corporate communication',
+      'Brand color schemes',
+      'Website design',
+    ],
+    images: [
+      '/landing pages/nova4.jpg',
+      '/landing pages/branding1.webp',
+      '/landing pages/branding2.webp',
+      '/landing pages/branding3.webp',
+      '/landing pages/nova3.jpg',
+      '/landing pages/nova4.jpg',
+    ],
+  },
+  {
     title: 'Website Development',
     description:
-      'We design high-converting websites that help you stand out in the global market and increase revenue.',
+      'We build high-converting websites using the brand guidelines that help you stand out in the global market and increase revenue.',
     features: [
-      'Custom web applications',
-      'Built by React',
-      'Frontend development',
-      'Backend development',
+      'Built by React and firebase',
+      'Responsive websites',
+      'Full-stack development',
       'API integration',
       'Performance optimization',
       'Ongoing support',
@@ -30,31 +52,9 @@ const servicesData = [
     ],
   },
   {
-    title: 'Landing Pages',
-    description:
-      ' We Leverage lastest technologies to create landing pages that captivate and most importantly, convert.',
-    features: [
-      'High-converting website',
-      'Multi page',
-      'Built by React',
-      'Website copy included',
-      'Responsive design',
-      'SEO optimization',
-      'Hosting assistance Coverage',
-    ],
-    images: [
-      '/landing pages/qw.avif',
-      '/landing pages/we.avif',
-      '/landing pages/er.avif',
-      '/landing pages/rt.avif',
-      '/landing pages/ty.avif',
-      '/landing pages/yu.avif',
-    ],
-  },
-  {
     title: 'E-commerce Solutions',
     description:
-      'We build powerful e-commerce platforms to help you sell products and services online effectively.',
+      'We build powerful e-commerce platforms to help you sell products and services online effectively. Our team is Determined to build the most user experience oriented websites',
     features: [
       'Custom E-commerce websites',
       'Shopping cart integration',
@@ -62,6 +62,7 @@ const servicesData = [
       'Inventory management',
       'Order tracking',
       'Analytics and reporting',
+      'Ongoing support',
     ],
     images: [
       '/commerce/cv.webp',
