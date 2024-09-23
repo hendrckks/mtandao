@@ -2,8 +2,7 @@ import React from 'react';
 import { Ticktick } from '../icons/Tick';
 import { X } from '../icons/X';
 import { Link } from 'react-router-dom';
-import { useFirebase } from '../../context/useFirebase';
-import { logEvent } from 'firebase/analytics';
+import { useFirebaseAnalytics } from '../../context/useFirebaseAnalytics';
 
 interface Feature {
   text: string;
@@ -32,25 +31,21 @@ const PricingCard: React.FC<PricingCardProps> = ({
   quaterlylink,
 }) => {
   const subscriptionLink = isQuarterly ? quaterlylink : monthlylink;
-  const { analytics } = useFirebase();
+  const { logCustomEvent } = useFirebaseAnalytics();
 
   const handleSubscribeClick = () => {
-    if (analytics) {
-      logEvent(analytics, 'select_item', {
-        item_list_name: 'Pricing Plans',
-        item_name: title,
-        item_variant: isQuarterly ? 'Quarterly' : 'Monthly',
-      });
-    }
+    logCustomEvent('select_item', {
+      item_list_name: 'Pricing Plans',
+      item_name: title,
+      item_variant: isQuarterly ? 'Quarterly' : 'Monthly',
+    });
   };
 
   const handleBookCallClick = () => {
-    if (analytics) {
-      logEvent(analytics, 'generate_lead', {
-        item_name: title,
-        item_variant: isQuarterly ? 'Quarterly' : 'Monthly',
-      });
-    }
+    logCustomEvent('generate_lead', {
+      item_name: title,
+      item_variant: isQuarterly ? 'Quarterly' : 'Monthly',
+    });
   };
 
   return (
