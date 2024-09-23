@@ -97,13 +97,13 @@ const pricingPlans: Array<
 > = [
   {
     title: 'Repras standard',
-    price: 2595,
+    price: 3595,
     description: 'One request at a time. Pause or cancel anytime.',
     icon: <GraphArrowIncreaseSolid className="text-black" />,
     features: [
-      { text: 'Full Stack Design (no development)', included: true },
-      { text: 'Unlimited Stock Photos', included: true },
-      { text: 'Average 96 hour delivery', included: true },
+      { text: 'Full-service creative (no development).', included: true },
+      { text: 'Corporate visuals', included: true },
+      { text: 'Weekly consulting call', included: true },
       { text: 'Unlimited Iterations.', included: true },
       { text: 'Slack Communication.', included: true },
       { text: 'Pause or cancel anytime.', included: true },
@@ -115,15 +115,15 @@ const pricingPlans: Array<
   },
   {
     title: 'Prix fixe',
-    price: 3995,
+    price: 6000,
     description: 'Double requests at a time. Pause or cancel anytime.',
     icon: <Rocket className="text-black" />,
     features: [
-      { text: 'Full stack design + development', included: true },
-      { text: 'Unlimited Stock Photos.', included: true },
-      { text: 'Updates every day.', included: true },
-      { text: 'Unlimited iterations.', included: true },
-      { text: 'Slack communication.', included: true },
+      { text: 'Full-service creative + development.', included: true },
+      { text: 'Weekly consulting calls.', included: true },
+      { text: 'Updates every 2 days.', included: true },
+      { text: 'Everything included.', included: true },
+      { text: 'Scale with your needs', included: true },
       { text: 'Pause or cancel anytime.', included: true },
     ],
     monthlylink:

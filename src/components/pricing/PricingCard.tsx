@@ -44,7 +44,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
       <p className="lg:text-[42px] text-4xl font-medium mt-4 flex items-center mb-2">
         $<span>{price}</span>/
         <span className="text-2xl font-semibold">
-          {isQuarterly ? 'm' : 'm'}
+          {isQuarterly ? 'mo' : 'mo'}
         </span>
       </p>
       <p className="text-sm py-6">{description}</p>
