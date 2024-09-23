@@ -16,7 +16,7 @@ const servicesData = [
       'Mockups',
       'Brand guidelines & copy',
       'Typography',
-      'Corporate communication',
+      'Product positioning',
       'Brand color schemes',
       'landing page and Website design',
     ],
