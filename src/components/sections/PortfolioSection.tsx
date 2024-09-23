@@ -137,9 +137,9 @@ const PortfolioSection: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#f0efef] min-h-[100vh] py-20 relative">
-      <Container className="mt-5 flex flex-col  lg:px-0 px-2 gap-24">
-        <div className="text-[#131211] w-full mt-12  lg:px-14 md:px-20 px-0">
+    <div className="bg-[#f0efef] min-h-[100vh] py-12 relative">
+      <Container className="flex flex-col lg:px-0 px-2 gap-24">
+        <div className="text-[#131211] w-full lg:px-14 md:px-20 px-0">
           <FlexibleBadge
             icon={Stack}
             text="Portfolio"
