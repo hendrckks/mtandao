@@ -11,7 +11,7 @@ const servicesData = [
     description:
       ' Our team is commited to provide comprehensive suite of creative services aimed at helping businesses develop their brand identity and marketing materials.',
     features: [
-      'Corporate visuals',
+      'Corporate visuals(premium photography and videography',
       'Premium logo designs',
       'Mockups',
       'Usage guidelines',
@@ -32,7 +32,7 @@ const servicesData = [
   {
     title: 'Website Development',
     description:
-      'We build high-converting websites using the brand guidelines that help you stand out in the global market and increase revenue.',
+      'We build high-converting websites ( using the brand guidelines ) that help you stand out in the global market and increase revenue.',
     features: [
       'Built by React and firebase',
       'Responsive websites',
