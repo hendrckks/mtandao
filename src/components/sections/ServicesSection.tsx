@@ -22,11 +22,12 @@ import { Hostinger } from '../icons/Hosting';
 import { GraphBar } from '../icons/Graph';
 import { Automation4 } from '../icons/Automations';
 import { Writing } from '../icons/Copywriting';
+import { Camera } from '../icons/Camera';
 
 const topServices = [
   // { text: 'Webflow experts', icon: Rocket },
   { text: 'React development', icon: ReactIcon },
-  { text: 'Brand identity', icon: BrandStocktwits },
+  { text: 'Brand development', icon: BrandStocktwits },
   { text: 'E-commerce solutions', icon: Shopify },
   { icon: Figma },
   // { text: 'Web developers', icon: ArrowCursor2 },
@@ -36,7 +37,7 @@ const topServices = [
   // { text: 'Webflow experts', icon: Rocket },
   { text: 'Brand identity', icon: BrandStocktwits },
   // { text: 'E-commerce solutions', icon: Shopify },
-  { text: 'Landing pages', icon: FrameOutline },
+  { text: 'Corporate visuals', icon: Camera },
   { text: 'Figma designs', icon: Figma },
 ];
 
@@ -50,7 +51,7 @@ const bottomServices = [
   { text: 'Web analytics', icon: GraphBar },
   // { text: 'Cybersecurity', icon: Wrench },
   { text: 'Automations intergrations', icon: Automation4 },
-  // { text: 'Brand identity', icon: ArrowCursor2 },
+  { text: 'Corporate communications', icon: BrandStocktwits },
 ];
 
 const ServicesSection: React.FC = () => {
