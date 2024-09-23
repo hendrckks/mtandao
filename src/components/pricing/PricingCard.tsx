@@ -2,6 +2,8 @@ import React from 'react';
 import { Ticktick } from '../icons/Tick';
 import { X } from '../icons/X';
 import { Link } from 'react-router-dom';
+import { useFirebase } from '../../context/useFirebase';
+import { logEvent } from 'firebase/analytics';
 
 interface Feature {
   text: string;
@@ -30,6 +32,26 @@ const PricingCard: React.FC<PricingCardProps> = ({
   quaterlylink,
 }) => {
   const subscriptionLink = isQuarterly ? quaterlylink : monthlylink;
+  const { analytics } = useFirebase();
+
+  const handleSubscribeClick = () => {
+    if (analytics) {
+      logEvent(analytics, 'select_item', {
+        item_list_name: 'Pricing Plans',
+        item_name: title,
+        item_variant: isQuarterly ? 'Quarterly' : 'Monthly',
+      });
+    }
+  };
+
+  const handleBookCallClick = () => {
+    if (analytics) {
+      logEvent(analytics, 'generate_lead', {
+        item_name: title,
+        item_variant: isQuarterly ? 'Quarterly' : 'Monthly',
+      });
+    }
+  };
 
   return (
     <div className="bg-white text-[#131211] rounded-3xl shadow-lg p-8 flex flex-col h-full">
@@ -67,6 +89,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
       <div className="flex-col text-center">
         <a
           href={subscriptionLink}
+          onClick={handleSubscribeClick}
           className="block mt-4 bg-black w-full text-white text-sm py-2 px-4 rounded-lg transition-colors hover:bg-gray-800"
         >
           Subscribe
@@ -74,6 +97,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
         <div className="mt-2 text-sm">or</div>
         <Link
           to="https://cal.com/samuel-tetenga/devcook-intro-call"
+          onClick={handleBookCallClick}
           className="block mt-2 underline text-sm hover:text-gray-600"
         >
           Book a call
