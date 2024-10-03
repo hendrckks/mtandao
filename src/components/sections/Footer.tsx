@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
     <div className="bg-black w-full py-12 lg:py-8 h-[50vh]">
       <Container className="text-white flex-col">
         <div>
-          <h2 className="lg:text-xl text-lg">Devcook.</h2>
+          <h2 className="lg:text-xl text-lg">Devscook.</h2>
         </div>
         <div className="py-14">
           <Container>
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
           />
         </div>
         <p className="text-sm text-[#b4b3b1]">
-          © 2024 Devcook LLC. All rights reserved.
+          © 2024 Devscook LLC. All rights reserved.
         </p>
       </Container>
     </div>

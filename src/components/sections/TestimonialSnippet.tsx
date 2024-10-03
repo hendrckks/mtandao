@@ -34,7 +34,7 @@ const TestimonialSnippet: React.FC<TestimonialSnippetProps> = ({
             alt="testimonial"
           />
           <p className="lg:text-[20px] mt-4 text-base">
-            "We're stoked with the work from Devcook. Very clean work"
+            "We're stoked with the work from Devscook. Very clean work"
           </p>
           <div className="flex gap-2 mt-2  text-sm">
             <p className="">Amy</p>

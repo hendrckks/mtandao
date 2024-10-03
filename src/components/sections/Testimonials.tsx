@@ -18,14 +18,14 @@ const staticTestimonials: Testimonial[] = [
     author: 'Luis',
     role: 'e-Commerce',
     quote:
-      "The Devcook crew made everything effortless. They listened to what supply needed as a brand and delivered a site that's beautiful and user-friendly. These folks really know their stuff!",
+      "The Devscook crew made everything effortless. They listened to what supply needed as a brand and delivered a site that's beautiful and user-friendly. These folks really know their stuff!",
     imageUrl: '/testimonials/testimonial5.webp',
   },
   {
     author: 'Aisha',
     role: 'Finance',
     quote:
-      "Devcook totally got our vision. They took some scattered ideas and turned them into a smooth and intuitive website. The process was super chill and we're beyond happy with the final look!",
+      "Devscook totally got our vision. They took some scattered ideas and turned them into a smooth and intuitive website. The process was super chill and we're beyond happy with the final look!",
     imageUrl: '/testimonials/testimonial4.webp',
   },
 ];
@@ -35,7 +35,7 @@ const scrollableTestimonials: Testimonial[] = [
     author: 'Ravi',
     role: 'e-Commerce',
     quote:
-      "We needed a fresh brand that really captured our style, and Devcook nailed it. The team is talented, down-to-earth, and just really easy to work with. Couldn't ask for better!",
+      "We needed a fresh brand that really captured our style, and Devscook nailed it. The team is talented, down-to-earth, and just really easy to work with. Couldn't ask for better!",
     imageUrl: '/testimonials/testimonial3.webp',
   },
   {
@@ -49,7 +49,7 @@ const scrollableTestimonials: Testimonial[] = [
     author: 'Dan',
     role: 'e-Commerce',
     quote:
-      "I loved working with Devcook! They brought our ideas to life in a way that feels authentic to our brand. Plus, they're really fun and easy to collaborate with—zero stress, all good vibes.",
+      "I loved working with Devscook! They brought our ideas to life in a way that feels authentic to our brand. Plus, they're really fun and easy to collaborate with—zero stress, all good vibes.",
     imageUrl: '/testimonials/testimonial3.webp',
   },
   // {

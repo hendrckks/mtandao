@@ -5,14 +5,14 @@ export interface FAQ {
 
 export const faqData: FAQ[] = [
   {
-    question: 'What’s Devcook’s delivery process?',
+    question: 'What’s Devscook’s delivery process?',
     answer:
-      'Devcook’s process is simple and collaborative. It begins with a kickoff call to understand your goals and inspiration. Then, you provide feedback while we handle the rest.             We update you every two days through written messages or Loom videos, depending on the topic, and are always available for a chat.',
+      'Devscook’s process is simple and collaborative. It begins with a kickoff call to understand your goals and inspiration. Then, you provide feedback while we handle the rest.             We update you every two days through written messages or Loom videos, depending on the topic, and are always available for a chat.',
   },
   {
     question: 'Why wouldn’t I just hire a full-time designer?',
     answer:
-      'They’re way more expensive and harder to manage. A senior-level designer like the ones at Devcook will easily cost you upwards of $100k, require benefits, vacation days, etc. It all adds up!',
+      'They’re way more expensive and harder to manage. A senior-level designer like the ones at Devscook will easily cost you upwards of $100k, require benefits, vacation days, etc. It all adds up!',
   },
   {
     question: 'How does pausing work?',
