@@ -95,7 +95,8 @@ const Services: React.FC = () => {
             What we do
           </h2>
           <p className="mt-4 text-sm">
-            Our lean team specializes in Web design and <br />
+            Our lean team specializes in brand development, Web design and{' '}
+            <br />
             development services.
           </p>
           <div className="flex items-center cursor-pointer">
