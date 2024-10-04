@@ -19,7 +19,7 @@ const messages = [
 
 const Carousel = () => {
   return (
-    <div className="relative w-full mt-8">
+    <div className="relativ bg-black w-full mt-8">
       <Container>
         <div className="overflow-hidden max-w-[80vw] relative">
           {/* Left and right gradient overlays */}
