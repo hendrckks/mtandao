@@ -36,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           />
         </div>
         <div className="flex justify-between items-center text-base px-5 mt-5">
-          <p className="text-[#131211]">{name}</p>
+          <p className="text-[#131211] font-semibold">{name}</p>
           <div className="flex items-center gap-2">
             <span className="text-[#9b9997] group-hover:text-[#131211] transition-colors duration-300">
               View Project
