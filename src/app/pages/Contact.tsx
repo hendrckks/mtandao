@@ -183,7 +183,7 @@ const Contact: React.FC = () => {
               </p>
             )}
             <Link
-              to="https://cal.com/devcook/devcook-intro"
+              to="https://cal.com/devscook/devscook-intro"
               className="flex p-4 border hover:bg-black hover:text-white transition-colors duration-300 items-center text-black justify-center mt-4 bg-white border-black rounded-lg space-x-2"
             >
               <div>

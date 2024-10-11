@@ -159,7 +159,7 @@ const additionalOptions: Array<AdditionalOptionProps> = [
     description:
       'Have a question about pricing?Book a call and we will help you settle it.',
     buttonText: 'Book a 15 min call with us',
-    buttonLink: 'https://cal.com/devcook/devcook-intro',
+    buttonLink: 'https://cal.com/devscook/devscook-intro',
   },
 ];
 

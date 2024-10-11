@@ -91,7 +91,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
         </a>
         <div className="mt-2 text-sm">or</div>
         <Link
-          to="https://cal.com/samuel-tetenga/devcook-intro-call"
+          to="https://cal.com/devscook/devscook-intro"
           onClick={handleBookCallClick}
           className="block mt-2 underline text-sm hover:text-gray-600"
         >
