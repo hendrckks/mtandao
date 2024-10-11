@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
   const { scrollToSection } = useContext(NavbarContext);
 
   const handleSectionClick =
-    (section: 'pricing' | 'testimonials' | 'about' | 'faq') => () => {
+    (section: 'pricing' | 'testimonials' | 'portfolio' | 'faq') => () => {
       scrollToSection(section);
     };
 
@@ -21,15 +21,15 @@ const Footer: React.FC = () => {
         <div className="py-14">
           <Container>
             <ul className="md:space-x-10 space-x-4 flex  items-center text-sm md:text-base">
-              <button onClick={handleSectionClick('about')}>
+              {/* <button onClick={handleSectionClick('about')}>
                 <li>About</li>
-              </button>
+              </button> */}
               <button onClick={handleSectionClick('testimonials')}>
                 <li>Testimonials</li>
               </button>
-              <Link to="/potfolio">
+              <button onClick={handleSectionClick('portfolio')}>
                 <li>Portfolio</li>
-              </Link>
+              </button>
               <button onClick={handleSectionClick('pricing')}>
                 <li>Pricing</li>
               </button>
