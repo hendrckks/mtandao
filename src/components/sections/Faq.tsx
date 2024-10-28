@@ -8,7 +8,7 @@ import { faqData } from '../faq/Faq';
 const Faq: React.FC = () => {
   return (
     <div className="bg-white text-[#131211] py-20">
-      <Container className="flex flex-col md:px-0 px-4 mt-20 items-center">
+      <Container className="flex flex-col md:px-0 px-4 gap-10 mt-20 items-center">
         <div className="flex flex-col items-center text-center">
           <FlexibleBadge
             className="flex items-center justify-center"
