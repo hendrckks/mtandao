@@ -91,7 +91,7 @@ const PortfolioSection: React.FC = () => {
     {
       id: 'rugafix',
       name: 'Rugafix',
-      imageUrl: '/portfolio/RUGA8.webp.png',
+      imageUrl: '/portfolio/RUGA 8.webp.png',
       description: '',
       year: '2023',
       workstreams: ['Brand Development'],
