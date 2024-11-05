@@ -7,7 +7,8 @@ export default {
         'custom-inset': 'inset 0px 2px 1px 0px rgb(255, 255, 255)',
       },
       fontFamily: {
-        brockmann: ['Brockmann', 'sans-serif'], // Add your custom font here
+        brockmann: ['Brockmann', 'sans-serif'],
+        satoshi: ['"Satoshi"', 'sans-serif'],
       },
       fontWeight: {
         light: 300,
