@@ -55,7 +55,7 @@ const ProjectView: React.FC<ProjectViewProps> = ({ project, onClose }) => {
       animate={{ y: 0 }}
       exit={{ y: '100%' }}
       transition={{ type: 'spring', damping: 20, stiffness: 100 }}
-      className="fixed inset-x-0 bottom-0 lg:h-[78vh] h-[95vh] bg-[#fafafa] shadow-lg text-[#131211] rounded-t-3xl z-50 hide-scrollbar"
+      className="fixed inset-x-0 bottom-0 lg:h-[78vh] h-[95vh] bg-[#fafafa] shadow-lg text-[#131211] rounded-t-3xl z-50 hide-scrollbar font-medium"
       onClick={(e) => e.stopPropagation()}
       style={scrollableContainerStyle}
     >

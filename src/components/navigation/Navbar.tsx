@@ -30,8 +30,10 @@ const Navbar: React.FC = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 p-4">
       <Container>
-        <div className="flex mt-6 justify-between items-center bg-[#f2f2f2] rounded-full w-full mx-auto p-[6px]">
-          <div className="lg:text-xl text-lg p-4 text-black">Devscook.</div>
+        <div className="flex mt-6 justify-between items-center bg-[#f2f2f2] rounded-full w-full mx-auto p-[6px] font-medium">
+          <div className="lg:text-xl text-lg p-4 text-black font-semibold">
+            Devscook.
+          </div>
           <div className="flex bg-black rounded-full p-[6px] items-center">
             <TooltipLink to="/" icon={Home2} tooltip="Home" />
             <TooltipLink

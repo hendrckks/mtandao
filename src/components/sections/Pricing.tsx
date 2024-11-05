@@ -17,7 +17,7 @@ interface PriceToggleProps {
 
 const PriceToggle: React.FC<PriceToggleProps> = ({ isQuarterly, onToggle }) => {
   return (
-    <div className="mb-8 flex-col text-center">
+    <div className="mb-8 flex-col text-center font-medium">
       <h3 className="text-3xl text-[#b4b3b1] py-2">
         Select the quarterly payment plan <br />
         to get a<span className="text-black"> 10% discount</span>
@@ -178,7 +178,7 @@ export default function Pricing() {
           <div className="bg-black flex w-fit text-sm mb-6 items-center justify-center gap-2 rounded-full">
             <FlexibleBadge text="Pricing" />
           </div>
-          <div className="text-black mt-4 md:text-center mb-8">
+          <div className="text-black mt-4 font-medium md:text-center mb-8">
             <p className="lg:text-4xl text-3xl font-semibold">
               Transactions made simple.
             </p>
@@ -192,7 +192,7 @@ export default function Pricing() {
               </span>
             </p>
           </div>
-          <div className="text-[#131211] text-base font-normal mb-12">
+          <div className="text-[#131211] text-base font-medium mb-12">
             <p className="py-4">
               We've developed different monthly pricing options for you and your
               business needs.

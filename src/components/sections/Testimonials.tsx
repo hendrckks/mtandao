@@ -70,7 +70,7 @@ const scrollableTestimonials: Testimonial[] = [
 
 const Testimonials: React.FC = () => {
   return (
-    <div className="bg-white text-[#131211] py-20">
+    <div className="bg-white text-[#131211] py-20 font-medium">
       <Container className="flex lg:px-0 md:px-10 px-4 mt-10 flex-col items-center">
         <div className="flex flex-col items-center text-center mb-12">
           <FlexibleBadge

@@ -49,7 +49,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
   };
 
   return (
-    <div className="bg-white text-[#131211] rounded-3xl shadow-lg p-8 flex flex-col h-full">
+    <div className="bg-white text-[#131211] rounded-3xl font-medium shadow-lg p-8 flex flex-col h-full">
       <div className="items-center flex mb-4">
         <div className="bg-[#b8ff45] h-12 w-12 flex items-center justify-center rounded-full mr-3">
           {icon}

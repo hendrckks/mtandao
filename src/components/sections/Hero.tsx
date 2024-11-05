@@ -23,17 +23,17 @@ export default function Hero() {
                 and web development to
                 <br className="hidden lg:inline" /> grow your business
               </h2>
-              <p className="py-6 mt-[16px] font-normal text-base lg:text-lg">
+              <p className="py-6 mt-[16px] font-medium text-base lg:text-lg">
                 Devscook replaces unreliable freelancers and expensive
                 <br className="hidden lg:inline" /> agencies for one flat
                 monthly fee, with designs delivered so fast that it will blow
                 your mind.
               </p>
-              <p className="mt-[16px] font-normal text-sm md:text-base lg:text-[18px]">
+              <p className="mt-[16px] font-medium text-sm md:text-base lg:text-[18px]">
                 Design and development subscriptions for everyone.
                 <br />
                 <br />
-                <span className="text-[#b4b3b1] text-sm">
+                <span className="text-[#b4b3b1] font-medium text-sm">
                   Pause or cancel anytime.
                 </span>
               </p>

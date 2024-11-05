@@ -150,7 +150,7 @@ const PortfolioSection: React.FC = () => {
             See our latest projects
           </h2>
           <div className="flex-col gap-5">
-            <p className="lg:text-3xl text-2xl text-[#131211] lg:mt-4">
+            <p className="lg:text-3xl text-2xl text-[#131211] lg:mt-2 font-medium">
               {/* Need a brand that’s so iconic, it’ll be etched into your
               customers’ minds before they even know it? We’re the experts. A
               website that’s so fast and user-friendly, it’ll make your
