@@ -85,12 +85,14 @@ const Services: React.FC = () => {
     <div className="min-h-[100vh] w-full bg-white font-medium">
       <Container className="flex-col items-start md:px-4 lg:px-0 px-4 py-48 text-black">
         <div className="mb-5">
-          <FlexibleBadge
-            text="Our Services"
-            iconClassName="hidden"
-            textClassName="text-[#787878] text-sm"
-            className="bg-[#f2f2f2]"
-          />
+          <h1>
+            <FlexibleBadge
+              text="Our Services"
+              iconClassName="hidden"
+              textClassName="text-[#787878] text-sm"
+              className="bg-[#f2f2f2]"
+            />
+          </h1>
           <h2 className="text-3xl lg:text-4xl font-semibold mt-4">
             What we do
           </h2>
