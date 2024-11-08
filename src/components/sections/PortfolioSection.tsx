@@ -94,8 +94,8 @@ const PortfolioSection: React.FC = () => {
       imageUrl: '/portfolio/RUGA8.webp',
       description: '',
       year: '2023',
-      workstreams: ['Brand Development'],
-      currentRelationship: '2 months',
+      workstreams: ['Brand Development concept'],
+      currentRelationship: '1 month',
       images: [
         // '/portfolio/supply.family.jpg',
         // '/portfolio/rt.jpg',
