@@ -24,7 +24,8 @@ export default function Hero() {
                 <br className="hidden lg:inline" /> grow your business
               </h2>
               <p className="md:py-6 py-4 mt-[16px] font-medium text-lg lg:text-lg">
-                Devscook replaces unreliable freelancers and expensive
+                <span className="text-[#a1a09e]">Devscook</span> replaces
+                unreliable freelancers and expensive
                 <br className="hidden lg:inline" /> agencies for one flat
                 monthly fee, with designs delivered so fast that it will blow
                 your mind.
