@@ -12,7 +12,7 @@ console.log('Firebase Analytics initialized', analytics);
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <div
-      className={`antialiased font-satoshi min-h-screen mx-auto dark:bg-gray-950 dark:text-gray-200`}
+      className={`antialiased font-athauss min-h-screen mx-auto dark:bg-gray-950 dark:text-gray-200`}
     >
       <RouterProvider router={router} />
     </div>

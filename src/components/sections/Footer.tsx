@@ -6,6 +6,7 @@ import { NavbarContext } from '../navigation/NavbarContext';
 
 const Footer: React.FC = () => {
   const { scrollToSection } = useContext(NavbarContext);
+  const currentYear = new Date().getFullYear();
 
   const handleSectionClick =
     (section: 'pricing' | 'testimonials' | 'portfolio' | 'faq') => () => {
@@ -43,7 +44,7 @@ const Footer: React.FC = () => {
           <span>Privacy policy</span>
           <span>Terms of service</span>
         </div> */}
-        <div className="py-14 space-x-4 flex items-center">
+        <div className="py-2 mb-8 space-x-4 flex items-center">
           <Link to="/contact-us">
             <FlexibleBadge
               text="Work with us"
@@ -61,7 +62,7 @@ const Footer: React.FC = () => {
           />
         </div>
         <p className="text-sm text-[#b4b3b1]">
-          © 2024 Devscook LLC. All rights reserved.
+          © {currentYear} Devscook LLC. All rights reserved.
         </p>
       </Container>
     </div>

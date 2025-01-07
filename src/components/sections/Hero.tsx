@@ -10,7 +10,7 @@ export default function Hero() {
     <div className="bg-white w-full">
       <Container className="mb-10 min-h-[700px] lg:min-w-[1300px] md:max-w-[1200px] h-fit px-4 md:px-24 lg:px-6 w-full">
         <div className="flex flex-col lg:flex-row gap-4 w-full">
-          <div className="py-16 lg:py-24 w-full text-[#131211] lg:w-1/2">
+          <div className="py-14 lg:py-24 w-full text-[#131211] lg:w-1/2">
             <div>
               {/* <div className="flex items-center space-x-4">
                 <EnhancedPulsingLiveButton />
@@ -23,17 +23,17 @@ export default function Hero() {
                 and web development to
                 <br className="hidden lg:inline" /> grow your business
               </h2>
-              <p className="py-6 mt-[16px] font-medium text-base lg:text-lg">
+              <p className="md:py-6 py-4 mt-[16px] font-medium text-lg lg:text-lg">
                 Devscook replaces unreliable freelancers and expensive
                 <br className="hidden lg:inline" /> agencies for one flat
                 monthly fee, with designs delivered so fast that it will blow
                 your mind.
               </p>
-              <p className="mt-[16px] font-medium text-sm md:text-base lg:text-[18px]">
+              <p className="mt-[16px] font-medium text-[15px] lg:text-[18px]">
                 Design and development subscriptions for everyone.
                 <br />
                 <br />
-                <span className="text-[#b4b3b1] font-medium text-sm">
+                <span className="text-[#b4b3b1] font-medium text-[15px]">
                   Pause or cancel anytime.
                 </span>
               </p>
@@ -58,7 +58,7 @@ export default function Hero() {
               </Link>
             </div>
           </div>
-          <div className="py-8 lg:py-24 w-full lg:w-1/2 text-[#131211]">
+          <div className="py-2 lg:py-24 w-full lg:w-1/2 text-[#131211]">
             <img
               src="/commerce/xd.jpg"
               alt="we do"

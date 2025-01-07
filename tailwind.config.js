@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         brockmann: ['Brockmann', 'sans-serif'],
         satoshi: ['"Satoshi"', 'sans-serif'],
+        athauss: 'At Hauss Std TRIAL',
       },
       fontWeight: {
         light: 300,

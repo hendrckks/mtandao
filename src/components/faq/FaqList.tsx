@@ -18,7 +18,7 @@ const FAQList: React.FC<FAQListProps> = ({ faqs }) => {
   };
 
   return (
-    <div className="w-full max-w-2xl mt-8">
+    <div className="w-full max-w-2xl md:mt-8 mt-2">
       {faqs.map((faq, index) => (
         <FAQItem
           key={index}
