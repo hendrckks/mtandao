@@ -163,7 +163,7 @@ const PortfolioSection: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-5">
+        <div className="grid lg:grid-cols-2 grid-cols-1 md:mt-0 mt-[-15px] gap-5">
           {projects.map((project) => (
             <ProjectCard
               key={project.id}
