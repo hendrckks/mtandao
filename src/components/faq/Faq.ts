@@ -35,3 +35,18 @@ export const faqData: FAQ[] = [
       'Absolutely! You can book an intro call to discuss potential projects anytime. Each project starts with a kickoff call.We offer strategy calls as needed, but prefer to let designers focus on their work. Depending on the topic, you might meet only with the project lead.',
   },
 ];
+
+export function getFAQSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqData.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+}

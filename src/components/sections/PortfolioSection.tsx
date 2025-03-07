@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 import Container from '../Container';
 import ProjectCard from '../ProjectCard';
 import ProjectView from '../../app/pages/ProjectView';
@@ -138,7 +139,13 @@ const PortfolioSection: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#f0efef] min-h-[100vh] py-12 relative">
+    <section className="bg-[#f0efef] min-h-[100vh] py-12 relative" aria-label="Portfolio Projects">
+      <Helmet>
+        <title>Our Portfolio - Featured Web Development & Design Projects | Devscook</title>
+        <meta name="description" content="Explore our portfolio of successful web development and design projects. From brand development to e-commerce solutions, see how we've helped businesses transform their digital presence." />
+        <meta name="keywords" content="web development portfolio, design projects, brand development, UI/UX design, successful projects, digital transformation" />
+        <link rel="canonical" href="https://devscook.com/portfolio" />
+      </Helmet>
       <Container className="flex flex-col lg:px-0 px-2 gap-24">
         <div className="text-[#131211] w-full lg:px-14 md:px-20 px-0">
           <FlexibleBadge
@@ -163,15 +170,17 @@ const PortfolioSection: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="grid lg:grid-cols-2 grid-cols-1 md:mt-0 mt-[-15px] gap-5">
+        <div className="grid lg:grid-cols-2 grid-cols-1 md:mt-0 mt-[-15px] gap-5" role="list" aria-label="Portfolio Projects Grid">
           {projects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              id={project.id}
-              name={project.name}
-              imageUrl={project.imageUrl}
-              onProjectClick={handleProjectClick}
-            />
+            <div role="listitem" aria-label={`${project.name} Project`}>
+              <ProjectCard
+                key={project.id}
+                id={project.id}
+                name={project.name}
+                imageUrl={project.imageUrl}
+                onProjectClick={handleProjectClick}
+              />
+            </div>
           ))}
         </div>
       </Container>
@@ -193,7 +202,7 @@ const PortfolioSection: React.FC = () => {
           </>
         )}
       </AnimatePresence>
-    </div>
+    </section>
   );
 };
 

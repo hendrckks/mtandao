@@ -38,22 +38,26 @@ const Home: React.FC = () => {
 
   return (
     <div className="min-h-screen w-full bg-white overflow-x-hidden">
-      <main className="pt-24">
+      <main className="pt-24" role="main" aria-label="Main content">
         <Hero />
-        <TestimonialSnippet testimonialsRef={testimonialsRef} />
-        <ServicesSection />
-        <div ref={portfolioRef}>
+        <section aria-label="Testimonial Snippet">
+          <TestimonialSnippet testimonialsRef={testimonialsRef} />
+        </section>
+        <section aria-label="Our Services">
+          <ServicesSection />
+        </section>
+        <section ref={portfolioRef} aria-label="Portfolio">
           <PortfolioSection />
-        </div>
-        <div ref={pricingRef} id="pricing-section">
+        </section>
+        <section ref={pricingRef} id="pricing-section" aria-label="Pricing Plans">
           <Pricing />
-        </div>
-        <div ref={faqRef}>
+        </section>
+        <section ref={faqRef} aria-label="Frequently Asked Questions">
           <Faq />
-        </div>
-        <div ref={testimonialsRef}>
+        </section>
+        <section ref={testimonialsRef} aria-label="Client Testimonials">
           <Testimonials />
-        </div>
+        </section>
       </main>
     </div>
   );

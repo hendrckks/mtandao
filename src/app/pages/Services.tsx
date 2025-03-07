@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Helmet } from 'react-helmet';
 import Container from '../../components/Container';
 import FlexibleBadge from '../../components/TitleBadge';
 import ServiceCard from '../../components/ServicesCard';
@@ -82,8 +83,14 @@ const Services: React.FC = () => {
     scrollToSection('portfolio');
   };
   return (
-    <div className="min-h-[100vh] w-full bg-white font-medium">
-      <Container className="flex-col items-start md:px-4 lg:px-0 px-4 py-48 text-black">
+    <main className="min-h-[100vh] w-full bg-white font-medium">
+      <Helmet>
+        <title>Professional Web Development & Design Services | Devscook</title>
+        <meta name="description" content="Expert brand development, web design, and e-commerce solutions. Transform your business with our professional web development services and creative design solutions." />
+        <meta name="keywords" content="web development, brand development, e-commerce solutions, web design, React development, API integration, responsive websites" />
+        <link rel="canonical" href="https://devscook.com/services" />
+      </Helmet>
+      <Container className="flex-col items-start md:px-4 lg:px-0 px-4 py-48 text-black" role="region" aria-label="Services Overview">
         <div className="mb-5">
           <h1>
             <FlexibleBadge
@@ -124,7 +131,7 @@ const Services: React.FC = () => {
           ))}
         </div>
       </Container>
-    </div>
+    </main>
   );
 };
 
